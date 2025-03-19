@@ -1,7 +1,6 @@
 import React from "react";
 import * as ReactRouterDOM from "react-router-dom";
 const { BrowserRouter: Router, Route, Routes } = ReactRouterDOM;
-import headImage from "./headImage.webp";
 import "./app.css";
 
 import NavBar from "./Navbar";
