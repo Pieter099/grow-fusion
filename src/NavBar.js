@@ -7,16 +7,16 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <link to="/">Home</link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <link to="/about">About Us</link>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <link to="/main">Farm Info</link>
+          <Link to="/main">Farm Info</Link>
         </li>
         <li>
-          <link to="/contact">Contacts</link>
+          <Link to="/contact">Contacts</Link>
         </li>
       </ul>
     </nav>
