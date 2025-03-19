@@ -1,5 +1,5 @@
+React Projects/GrowFusion project/grow-fusion/src/App.js
 import React from "react";
-import * as ReactRouterDOM from "react-router-dom";
 import "./app.css";
 import NavBar from "./NavBar";
 import Home from "./Home";
@@ -7,19 +7,23 @@ import About from "./About";
 import FarmInfo from "./FarmingInfo";
 import Contacts from "./Contacts";
 
-const { BrowserRouter: Router, Route, Routes } = ReactRouterDOM;
-
 const App = () => {
   return (
-    <Router>
+    <div>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/main" element={<FarmInfo />} />
-        <Route path="/contact" element={<Contacts />} />
-      </Routes>
-    </Router>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="main">
+        <FarmInfo />
+      </section>
+      <section id="contact">
+        <Contacts />
+      </section>
+    </div>
   );
 };
 
