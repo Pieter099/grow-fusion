@@ -6,16 +6,16 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <Link href="#home">Home</Link>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <Link href="#about">About Us</Link>
+          <a href="#about">About Us</a>
         </li>
         <li>
-          <Link href="#main">Farm Info</Link>
+          <a href="#main">Farm Info</a>
         </li>
         <li>
-          <Link href="#contact">Contacts</Link>
+          <a href="#contact">Contacts</a>
         </li>
       </ul>
     </nav>
