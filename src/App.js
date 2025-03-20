@@ -8,7 +8,7 @@ import Contacts from "./Contacts";
 
 const App = () => {
   return (
-    <div>
+    <body>
       <NavBar />
       <section id="home">
         <Home />
@@ -22,7 +22,7 @@ const App = () => {
       <section id="contact">
         <Contacts />
       </section>
-    </div>
+    </body>
   );
 };
 
