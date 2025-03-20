@@ -1,4 +1,3 @@
-React Projects/GrowFusion project/grow-fusion/src/App.js
 import React from "react";
 import "./app.css";
 import NavBar from "./NavBar";
