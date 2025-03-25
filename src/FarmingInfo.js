@@ -5,6 +5,9 @@ const FarmInfo = () => {
   return (
     <main className="main-section" >
       <h2>Farming Information</h2>
+      <section className="cropPrices">
+        <h3>Prices of crops:</h3>
+      </section>
       <section className="cropProperties">
         <h3>Additional Crop information:</h3>
       </section>
