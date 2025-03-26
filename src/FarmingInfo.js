@@ -5,7 +5,7 @@ import step3 from "./step3.jpg";
 import step4 from "./step4.jpg";
 import step5 from "./step5.jpg";
 import step6 from "./step6.jpg";
-import step7 from "./step7.jpg";
+import step7 from "./step7.JPG";
 import step8 from "./step8.jpg";
 import step9 from "./step9.jpg";
 import "./farmingInfo.css";
@@ -26,7 +26,7 @@ const FarmInfo = () => {
       <section className="soilPrep">
         <h3>Preparing your soil:</h3>
         <p>Preparing soil for crop planting using farming machinery involves several key steps to ensure optimal soil conditions for seed germination and plant growth. Here’s a step-by-step guide:</p>
-        <ul>
+        <ul className="soil-prep-steps">
           <li>
             <img src={step1} alt="Step 1" />
             Step 1. Clear the Field: Remove any existing vegetation, rocks, and debris from the field. This can be efficiently accomplished using machinery such as mowers, brush cutters, or heavy-duty tractors equipped with appropriate attachments.
