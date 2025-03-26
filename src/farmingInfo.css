@@ -1,3 +1,10 @@
+main .soilPrep {
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+
 main .soilPrep .soil-prep-steps {
     justify-content: space-between;
     align-items: center;
@@ -14,9 +21,6 @@ main .soilPrep .soil-prep-steps {
     flex-direction: row;
     border-bottom: 2px solid green;
     border-top: 2px solid green;
-    font-size: 18px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
 }
 
 .soil-prep-steps li img {
@@ -27,4 +31,9 @@ main .soilPrep .soil-prep-steps {
     margin-right: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.soil-prep-steps li p {
+  display: flex;
+  flex-direction: column;
 }

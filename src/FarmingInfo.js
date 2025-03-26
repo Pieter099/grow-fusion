@@ -29,39 +29,66 @@ const FarmInfo = () => {
         <ul className="soil-prep-steps">
           <li>
             <img src={step1} alt="Step 1" />
-            Step 1. Clear the Field: Remove any existing vegetation, rocks, and debris from the field. This can be efficiently accomplished using machinery such as mowers, brush cutters, or heavy-duty tractors equipped with appropriate attachments.
+            <p>
+              <strong>Step 1. Clear the Field:</strong> 
+              Begin by removing any debris, rocks, or vegetation from the field. This step creates a clean slate for soil preparation and prevents interference with planting equipment.
+            </p>
           </li>
           <li>
             <img src={step2} alt="Step 2" />
-            Step 2. Test the Soil: Conduct a soil test to determine nutrient content, pH levels, and organic matter composition. This information is crucial for understanding the specific needs of your soil and planning appropriate amendments. Soil testing kits are available, or you can send samples to a local agricultural extension service for analysis.
+            <p>
+              <strong>Step 2. Test the Soil:</strong>
+              Conduct a soil test to determine nutrient content, pH levels, and organic matter composition. This information is crucial for understanding the specific needs of your soil and planning appropriate amendments. Soil testing kits are available, or you can send samples to a local agricultural extension service for analysis.
+            </p>
           </li>
           <li>
             <img src={step3} alt="Step 3" />
-            Step 3. Apply Soil Amendments: Based on the soil test results, add necessary amendments to correct nutrient deficiencies or pH imbalances. Common amendments include lime to raise pH, sulfur to lower pH, and various fertilizers to supply essential nutrients.
+            <p>
+              <strong>Step 3. Apply Soil Amendments:</strong> 
+              Based on the soil test results, add necessary amendments to correct nutrient deficiencies or pH imbalances. Common amendments include lime to raise pH, sulfur to lower pH, and various fertilizers to supply essential nutrients.
+            </p>
           </li>
           <li>
             <img src={step4} alt="Step 4" />
-            Step 4. Primary Tillage: Use primary tillage equipment, such as moldboard plows or chisel plows, to break up compacted soil and incorporate amendments. This process loosens the soil to a depth of about 8-12 inches, improving aeration and drainage.
+            <p>
+              <strong>Step 4. Primary Tillage:</strong> 
+              Use primary tillage equipment, such as moldboard plows or chisel plows, to break up compacted soil and incorporate amendments. This process loosens the soil to a depth of about 8-12 inches, improving aeration and drainage.
+            </p>
           </li>
           <li>
             <img src={step5} alt="Step 5" />
-            Step 5. Secondary Tillage: Follow up with secondary tillage using implements like disc harrows or rotary tillers to further refine the soil texture, break up clumps, and create a smooth seedbed. This step also helps in weed control by uprooting young weed seedlings.
+            <p>
+              <strong>Step 5. Secondary Tillage:</strong> 
+              Follow up with secondary tillage using implements like disc harrows or rotary tillers to further refine the soil texture, break up clumps, and create a smooth seedbed. This step also helps in weed control by uprooting young weed seedlings.
+            </p>
           </li>
           <li>
             <img src={step6} alt="Step 6" />
-            Step 6. Level the Field: Use leveling equipment, such as land planes or drags, to ensure a uniform surface. A level field promotes even water distribution and consistent planting depth.
+            <p>
+              <strong>Step 6. Level the Field:</strong> 
+              Use leveling equipment, such as land planes or drags, to ensure a uniform surface. A level field promotes even water distribution and consistent planting depth.
+            </p>
           </li>
           <li>
             <img src={step7} alt="Step 7" />
-            Step 7. Firm the Seedbed: After tillage, use a roller or cultipacker to firm the seedbed. This step ensures good seed-to-soil contact, which is vital for uniform germination.
+            <p>
+              <strong>Step 7. Firm the Seedbed:</strong> 
+              After tillage, use a roller or cultipacker to firm the seedbed. This step ensures good seed-to-soil contact, which is vital for uniform germination.
+            </p>
           </li>
           <li>
             <img src={step8} alt="Step 8" />
-            Step 8. Install Irrigation Systems: If applicable, set up irrigation infrastructure to provide consistent water supply during the growing season. This may involve installing drip lines, sprinklers, or other irrigation equipment.
+            <p>
+              <strong>Step 8. Install Irrigation Systems:</strong> 
+              If applicable, set up irrigation infrastructure to provide consistent water supply during the growing season. This may involve installing drip lines, sprinklers, or other irrigation equipment.
+            </p>
           </li>
           <li>
             <img src={step9} alt="Step 9" />
-            Step 9. Final Inspection: Walk the field to inspect for any remaining debris, uneven areas, or issues that might hinder planting. Address any problems before proceeding to sowing seeds.
+            <p>
+              <strong>Step 9. Final Inspection:</strong> 
+              Walk the field to inspect for any remaining debris, uneven areas, or issues that might hinder planting. Address any problems before proceeding to sowing seeds.
+            </p>
           </li>
         </ul>
         <p>For a more in-depth explanation of soil preparation techniques and considerations, <a href="https://www.fao.org/4/y4360e/y4360e0a.htm?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Visit</a></p>
