@@ -25,8 +25,8 @@ const FarmInfo = () => {
       </section>
       <section className="cropProperties">
         <h3>Additional Crop information:</h3>
-        <p></p>
-        <ul>
+        <p>Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
+        <ul className="crop-properties-list">
           <li>
             <img src={barley} alt="Barley" />
             <p>
