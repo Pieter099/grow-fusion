@@ -86,6 +86,7 @@ const FarmInfo = () => {
       </section>
       <section className="cropSeason">
         <h3>Crop Seasons:</h3>
+        <p>Here is a table that outlines the planting and harvesting seasons for various crops:</p>
         <CropTable />
       </section>
       <section className="soilPrep">

@@ -33,7 +33,7 @@ const CropTable = () => {
               <td>{crop.name}</td>
               {months.map((month, index) => {
                 if (crop.planting.includes(month)) return <td key={index} style={{ backgroundColor: "#90EE90" }}></td>;
-                if (crop.harvesting.includes(month)) return <td key={index} style={{ backgroundColor: "#FFA500" }}></td>;
+                if (crop.harvesting.includes(month)) return <td key={index} style={{ backgroundColor: "#FF8C00" }}></td>;
                 return <td key={index}></td>;
               })}
             </tr>

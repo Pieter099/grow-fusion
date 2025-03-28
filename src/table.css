@@ -5,11 +5,18 @@
     justify-content: center;
 }
 
+th,
+tr,
+td {
+    border: 1px solid #111;
+}
+
 .cropTable table {
     width: 95%;
     text-align: center;
     border-collapse: collapse;
     border: 2px solid #111;
+    margin: 0 auto;
 }
 
 /* legend */
@@ -37,6 +44,6 @@
     width: 15px;
     height: 15px;
     border: 1px solid #111;
-    background-color: #ffa500;
+    background-color: #ff8c00;
     margin-right: 5px;
 }

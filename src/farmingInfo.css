@@ -49,7 +49,14 @@ main .cropProperties .crop-properties-list {
 }
 
 /* crop seasons */
+.cropSeason {
+  background-color: #D4B48A;
+}
 
+.cropSeason CropTable {
+  align-items: center;
+  justify-content: center;
+}
 
 /* soil prep section */
 main .soilPrep {
