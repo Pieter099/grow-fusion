@@ -1,4 +1,5 @@
 import React from "react";
+import CropTable from "./Table.js"
 import barley from "./barley.jpg";
 import corn from "./corn.jpg";
 import cotton from "./cotton.jpg";
@@ -85,6 +86,7 @@ const FarmInfo = () => {
       </section>
       <section className="cropSeason">
         <h3>Crop Seasons:</h3>
+        <CropTable />
       </section>
       <section className="soilPrep">
         <h3>Preparing your soil:</h3>
