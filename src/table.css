@@ -1,0 +1,42 @@
+/* table */
+.cropTable {
+    margin: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.cropTable table {
+    width: 95%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #111;
+}
+
+/* legend */
+.legend {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.legend .legendInfo {
+    display: flex;
+    align-items: center;
+}
+
+.legend .legendInfo .info-1 {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #111;
+    background-color: #90ee90;
+    margin-right: 5px;
+}
+
+.legend .legendInfo .info-2 {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #111;
+    background-color: #ffa500;
+    margin-right: 5px;
+}

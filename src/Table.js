@@ -17,8 +17,8 @@ const months = [
 
 const CropTable = () => {
   return (
-    <section className="table">
-      <table border="1" style={{ width: "100%", textAlign: "center", borderCollapse: "collapse" }}>
+    <section className="cropTable">
+      <table>
         <thead>
           <tr>
             <th>Crops</th>
@@ -33,7 +33,7 @@ const CropTable = () => {
               <td>{crop.name}</td>
               {months.map((month, index) => {
                 if (crop.planting.includes(month)) return <td key={index} style={{ backgroundColor: "#90EE90" }}></td>;
-                if (crop.harvesting.includes(month)) return <td key={index} style={{ backgroundColor: "#FFD700" }}></td>;
+                if (crop.harvesting.includes(month)) return <td key={index} style={{ backgroundColor: "#FFA500" }}></td>;
                 return <td key={index}></td>;
               })}
             </tr>
@@ -42,14 +42,14 @@ const CropTable = () => {
       </table>
       
       {/* Legend */}
-      <div style={{ marginTop: "10px", display: "flex", alignItems: "center", gap: "20px" }}>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <div style={{ width: "15px", height: "15px", backgroundColor: "#90EE90", marginRight: "5px" }}></div>
-          <span>Planting</span>
+      <div className="legend">
+        <div className="legendInfo">
+          <div className="info-1"></div>
+          <p>Planting</p>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <div style={{ width: "15px", height: "15px", backgroundColor: "#FFD700", marginRight: "5px" }}></div>
-          <span>Harvesting</span>
+        <div className="legendInfo">
+          <div className="info-2"></div>
+          <p>Harvesting</p>
         </div>
       </div>
     </section>
