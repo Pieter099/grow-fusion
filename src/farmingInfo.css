@@ -43,6 +43,7 @@ main .cropProperties .crop-properties-list {
 }
 
 .crop-properties-list li p {
+  text-align: left;
   display: flex;
   flex-direction: column;
 }
