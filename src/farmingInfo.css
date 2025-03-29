@@ -107,7 +107,7 @@ main .crop-care {
   line-height: 20px;
 }
 
-main .crop-care .crop-care-list {
+main .crop-care .crop-care-info-list {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -116,7 +116,7 @@ main .crop-care .crop-care-list {
   margin: 0 250px;
 }
 
-.crop-care .crop-care-list li {
+.crop-care .crop-care-info-list li {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -125,7 +125,7 @@ main .crop-care .crop-care-list {
   border-top: 2px solid green;
 }
 
-.crop-care-list li img {
+.crop-care-info-list li img {
   height: 300px;
   width: auto;
   margin-top: 0;
@@ -135,11 +135,9 @@ main .crop-care .crop-care-list {
   padding-bottom: 40px;
 }
 
-.crop-care-list li p {
+.crop-care-info-list li p {
   display: flex;
   flex-direction: column;
 }
 
-/* fertilize steps */
-
-/* herbicide steps */
+/* fertilize and herbicide steps */

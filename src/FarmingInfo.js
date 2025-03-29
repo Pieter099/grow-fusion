@@ -164,7 +164,7 @@ const FarmInfo = () => {
       <section className="crop-care">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
         <p>Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
-        <ul className="crop-care-list">
+        <ul className="crop-care-info-list">
           <li>
             <img src={fertilizer} alt="Fertilizer" />
             <p>
@@ -205,9 +205,117 @@ const FarmInfo = () => {
           </li>
         </ul>
       </section>
-      <section className="spray-steps">
+      <section className="crop-care-steps">
         <h3>Fertilizing steps:</h3>
+        <p>Here is a step-by-step guide to applying fertilizer:</p>
+        <ul className="crop-care-steps-list">
+          <li>
+            <img />
+            <p>
+              <strong>Step 1. Assess Your Field:</strong>
+	            •	Soil Testing: Begin by taking a soil sample to determine nutrient levels. This helps you decide which type of fertilizer and application rate is best for your crops.
+	            •	Field Evaluation: Look at the field’s layout, moisture levels, and any previous treatments to plan the most effective approach.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong> Step 2. Choose the Right Fertilizer:</strong>
+             	•	Based on Soil Test: Use the test results to select a fertilizer that provides the nutrients your soil lacks (e.g., nitrogen, phosphorus, potassium).
+            	•	Form & Delivery Method: Decide whether you’ll use granular, liquid, or another form, as this influences how you’ll apply it.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong>Step 3. Prepare Equipment and Machinery:</strong>
+	            •	Manual Application: For smaller fields or precision work, have tools like a spreader or hand-held applicator ready.
+	            •	Machinery Setup: For larger areas, use a tractor fitted with a calibrated fertilizer spreader. Calibration is essential to ensure the correct application rate.
+	            •	Maintenance Check: Make sure all machinery parts (e.g., spreader discs, nozzles) are clean and functioning properly.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong>Step 4. Calibrate Your Equipment:</strong>
+	            •	Determine Application Rate: Based on the fertilizer package instructions and soil test recommendations, calculate the precise amount needed per acre or hectare.
+	            •	Calibration Process: Run a small test section with your machinery to ensure the spreader or sprayer is delivering the fertilizer evenly. Adjust settings as necessary.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong>Step 5. Application Process:</strong>
+	            •	Manual Application: If applying by hand, evenly distribute the fertilizer using a spreader or by walking systematically through the field. Work in rows or sections to avoid overlaps.
+	            •	Machinery Application:
+	            •	Start at the Field Edge: Begin at one end of the field and move in a systematic pattern (usually in rows) to cover the entire area.
+	            •	Monitor Speed: Keep a consistent speed to ensure uniform distribution.
+	            •	Overlap Control: Ensure minimal overlap between passes to avoid over-application in some spots.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong>Step 6. Post-Application Steps:</strong>
+	            •	Incorporation: Depending on the crop and soil type, you might need to lightly till the field after application to help the fertilizer mix with the soil. This step is crucial if you’re using a granular fertilizer.
+	            •	Irrigation: In many cases, a light irrigation helps dissolve the fertilizer and moves nutrients into the root zone.
+	            •	Clean Up: Clean any manual tools and check machinery for any leftover fertilizer buildup, which can affect future applications.
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong>Step 7. Safety and Environmental Considerations:</strong>
+	            •	Personal Protection: Always wear protective gear—gloves, goggles, and a mask—especially if you’re handling chemicals manually.
+	            •	Environmental Awareness: Be mindful of weather conditions; avoid application before heavy rain to prevent runoff into waterways.
+            </p>
+          </li>
+        </ul>
         <h3>Herbicide steps:</h3>
+        <ul className="crop-care-steps-list">
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+          <li>
+            <img />
+            <p>
+              <strong></strong>
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
   );
