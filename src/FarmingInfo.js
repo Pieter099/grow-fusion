@@ -15,6 +15,8 @@ import step6 from "./step6.jpg";
 import step7 from "./step7.JPG";
 import step8 from "./step8.jpg";
 import step9 from "./step9.jpg";
+import fertiliser from "./fertiliser.jpg";
+import herbicide from "./herbicide.jpg";
 import "./farmingInfo.css";
 
 const FarmInfo = () => {
@@ -161,13 +163,51 @@ const FarmInfo = () => {
       </section>
       <section className="spray-types">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
+        <p>Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
+        <ul>
+          <li>
+            <img src={fertiliser} alt="Fertilizer" />>
+            <p>
+              <strong>Fertilizer</strong>
+              1.	Purpose: Fertilizers replenish essential nutrients in the soil, promoting healthy plant growth and enhancing crop yields.
+	            2.	Types of Fertilizers:
+	              •	Organic: Derived from natural sources like compost and manure, they improve soil structure and fertility.
+	              •	Inorganic (Mineral): Manufactured chemically, providing precise nutrient concentrations for targeted plant needs. ￼
+	            3.	Essential Nutrients:
+	              •	Macronutrients: Required in large amounts; include nitrogen (N), phosphorus (P), and potassium (K).
+	              •	Micronutrients: Needed in smaller quantities; include elements like iron, zinc, and copper.
+	            4.	Application Methods:
+	              •	Soil Application: Direct incorporation into the soil near plant roots.
+	              •	Foliar Application: Spraying nutrient solutions directly onto plant leaves for quick absorption.
+	            5.	Environmental Considerations: Proper use of fertilizers is crucial to prevent issues like water pollution and soil degradation. Responsible application ensures sustainable agriculture and environmental protection.
+            </p>
+          </li>
+          <li>
+            <img src={herbicide} alt="Herbicide" />
+            <p>
+              <strong>Herbicide</strong>
+              1.	Purpose: Herbicides are chemical agents designed to control or eliminate unwanted vegetation, such as weeds, that compete with crops for nutrients, water, and sunlight.  ￼
+	            2.	Types of Herbicides:
+	              •	Selective Herbicides: Target specific plant species while leaving desired crops unharmed. For example, certain herbicides control broadleaf weeds in cereal crops without affecting the cereals.  ￼
+	              •	Non-Selective Herbicides: Affect a wide range of plant species and are typically used to clear land of all vegetation. Glyphosate is a widely known non-selective herbicide.
+	            3.	Application Methods:
+	              •	Pre-Planting: Applied before crops are planted to eliminate existing weeds. ￼
+	              •	Pre-Emergence: Applied after planting but before crop seedlings emerge, targeting germinating weed seeds. ￼
+	              •	Post-Emergence: Applied after both crops and weeds have emerged, focusing on actively growing weeds.  ￼
+	            4.	Modes of Action:
+	              •	Contact Herbicides: Kill only the plant parts they come into direct contact with, requiring thorough coverage for effectiveness. ￼
+	              •	Systemic Herbicides: Absorbed by foliage or roots and translocated throughout the plant, affecting growth processes. Glyphosate, for instance, inhibits an enzyme involved in amino acid synthesis.  ￼
+	            5.	Environmental and Health Considerations:
+	              •	Persistence: Some herbicides degrade quickly in the environment, while others persist longer, potentially affecting non-target organisms.
+	              •	Resistance: Over-reliance on specific herbicides can lead to the development of resistant weed species, complicating management strategies. For example, glyphosate-resistant Italian ryegrass has been identified in the UK.  ￼
+	              •	Health Impacts: Certain herbicides have been scrutinized for potential health risks. For instance, paraquat has been under review due to possible links to Parkinson’s disease.  ￼
+            </p>
+          </li>
+        </ul>
       </section>
       <section className="spray-steps">
         <h3>Fertilizing steps:</h3>
         <h3>Herbicide steps:</h3>
-      </section>
-      <section className="harvest">
-        <h3>Harvesting and after:</h3>
       </section>
     </main>
   );
