@@ -15,7 +15,7 @@ import step6 from "./step6.jpg";
 import step7 from "./step7.JPG";
 import step8 from "./step8.jpg";
 import step9 from "./step9.jpg";
-import fertiliser from "./fertiliser.jpg";
+import fertilizer from "./fertilizer.jpg";
 import herbicide from "./herbicide.jpg";
 import "./farmingInfo.css";
 
@@ -161,12 +161,12 @@ const FarmInfo = () => {
         </ul>
         <p>For a more in-depth explanation of soil preparation techniques and considerations, <a href="https://www.fao.org/4/y4360e/y4360e0a.htm?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Visit</a></p>
       </section>
-      <section className="spray-types">
+      <section className="crop-care">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
         <p>Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
-        <ul>
+        <ul className="crop-care-list">
           <li>
-            <img src={fertiliser} alt="Fertilizer" />>
+            <img src={fertilizer} alt="Fertilizer" />
             <p>
               <strong>Fertilizer</strong>
               1.	Purpose: Fertilizers replenish essential nutrients in the soil, promoting healthy plant growth and enhancing crop yields.

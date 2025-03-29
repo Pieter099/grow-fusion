@@ -98,3 +98,48 @@ main .soilPrep .soil-prep-steps {
   display: flex;
   flex-direction: column;
 }
+
+/* crop care section (fertilize, herbicide) */
+main .crop-care {
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 20px;
+}
+
+main .crop-care .crop-care-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 250px;
+}
+
+.crop-care .crop-care-list li {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid green;
+  border-top: 2px solid green;
+}
+
+.crop-care-list li img {
+  height: 300px;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.crop-care-list li p {
+  display: flex;
+  flex-direction: column;
+}
+
+/* fertilize steps */
+
+/* herbicide steps */
