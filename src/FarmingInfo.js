@@ -276,43 +276,56 @@ const FarmInfo = () => {
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 1. Pre-Application Planning:</strong>
+	            •	Identify the Weed Problem: Determine which weed species are present and select an herbicide that targets them.
+	            •	Read the Label: Carefully review the herbicide’s instructions, including the recommended dosage, timing (pre-emergent vs. post-emergent), and any specific restrictions.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 2.	Equipment Preparation:</strong>
+	            •	Select the Right Machinery: Ensure your sprayer or application equipment is suitable for the herbicide type and field size.
+	            •	Calibration: Calibrate your machinery to deliver the correct amount of herbicide per acre or hectare. This involves testing the flow rate, checking nozzle performance, and confirming uniform coverage.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 3.	Mixing the Herbicide:</strong>
+	            •	Follow Safety Protocols: Wear appropriate personal protective equipment (PPE) like gloves, goggles, and coveralls.
+	            •	Mix Accurately: Use clean water in the correct ratio as directed on the herbicide label. Add the herbicide to the water—never the reverse—to ensure even distribution.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 4.	Weather Check:</strong>
+	            •	Optimal Conditions: Verify that weather conditions are suitable—avoid application during high winds, heavy rain, or extreme temperatures to minimize drift and ensure proper absorption.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 5.	Application Process:</strong>
+	            •	Uniform Application: Begin spraying with consistent speed and overlap, ensuring even distribution across the field.
+	            •	Monitor Equipment: Regularly check that the machinery is maintaining the correct pressure and that no clogs or malfunctions occur during application.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step 6.	Post-Application Procedures:</strong>
+	            •	Equipment Cleaning: Thoroughly clean all machinery and nozzles to avoid residue build-up, which can lead to corrosion or affect future applications.
+	            •	Record Keeping: Document the herbicide application details—date, field location, dosage, weather conditions, and any observations—to help inform future management decisions.
             </p>
           </li>
           <li>
             <img />
             <p>
-              <strong></strong>
+              <strong>Step  7.	Follow-Up:</strong>
+	            •	Evaluate Effectiveness: After the recommended period, inspect the field to assess the herbicide’s performance.
+	            •	Plan for Reapplication: If weeds persist, consult the label and consider whether a follow-up application or alternative strategy is needed.
             </p>
           </li>
         </ul>
