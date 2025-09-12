@@ -24,6 +24,7 @@ const FarmInfo = () => {
   return (
     <main className="main-section">
       <h2>Farming Information</h2>
+      <SubNavbar />
       <section className="cropPrices" id="crop-price">
         <h3>Prices of crops:</h3>
       </section>

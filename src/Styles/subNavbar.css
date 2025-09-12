@@ -1,0 +1,35 @@
+.sub-navbar {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.sub-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+.sub-navbar ul li {
+  margin: 0 20px;
+  padding: 20px 15px;
+}
+
+.sub-navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+    font-weight: bold;
+}
+
+.sub-navbar ul li:hover {
+  border-bottom: 3px solid #fff;
+}
