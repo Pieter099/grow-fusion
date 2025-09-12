@@ -1,4 +1,4 @@
-nav {
+.main-navbar {
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -10,7 +10,7 @@ nav {
   padding: 0;
 }
 
-nav ul {
+.main-navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -19,18 +19,18 @@ nav ul {
   margin: 0;
 }
 
-nav ul li {
+.main-navbar ul li {
   margin: 0 20px;
   padding: 20px 15px;
 }
 
-nav ul li a {
+.main-navbar ul li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
     font-weight: bold;
 }
 
-nav ul li:hover {
+.main-navbar ul li:hover {
   border-bottom: 3px solid #fff;
 }

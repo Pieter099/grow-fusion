@@ -1,5 +1,6 @@
 import React from "react";
 import CropTable from "../Components/Table";
+import SubNavbar from "./SubNavbar";
 import barley from "../Utils/barley.jpg";
 import corn from "../Utils/corn.jpg";
 import cotton from "../Utils/cotton.jpg";
@@ -23,10 +24,10 @@ const FarmInfo = () => {
   return (
     <main className="main-section">
       <h2>Farming Information</h2>
-      <section className="cropPrices">
+      <section className="cropPrices" id="crop-price">
         <h3>Prices of crops:</h3>
       </section>
-      <section className="cropProperties">
+      <section className="cropProperties" id="crop-info">
         <h3>Additional Crop information:</h3>
         <p>Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
         <ul className="crop-properties-list">
@@ -86,12 +87,12 @@ const FarmInfo = () => {
           </li>
         </ul>
       </section>
-      <section className="cropSeason">
+      <section className="cropSeason" id="crop-calender">
         <h3>Crop Seasons:</h3>
         <p>Here is a table that outlines the planting and harvesting seasons for various crops:</p>
         <CropTable />
       </section>
-      <section className="soilPrep">
+      <section className="soilPrep" id="soil-prep">
         <h3>Preparing your soil:</h3>
         <p>Preparing soil for crop planting using farming machinery involves several key steps to ensure optimal soil conditions for seed germination and plant growth. Here’s a step-by-step guide:</p>
         <ul className="soil-prep-steps">
@@ -161,7 +162,7 @@ const FarmInfo = () => {
         </ul>
         <p>For a more in-depth explanation of soil preparation techniques and considerations, <a href="https://www.fao.org/4/y4360e/y4360e0a.htm?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Visit</a></p>
       </section>
-      <section className="crop-care">
+      <section className="crop-care" id="crop-treatment-info">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
         <p>Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
         <ul className="crop-care-info-list">
@@ -205,7 +206,7 @@ const FarmInfo = () => {
           </li>
         </ul>
       </section>
-      <section className="crop-care-steps">
+      <section className="crop-care-steps" id="crop-treatment-steps">
         <h3>Fertilizing steps:</h3>
         <p>Here is a step-by-step guide to applying fertilizer:</p>
         <ul className="crop-care-steps-list">
