@@ -1,23 +1,23 @@
 import React from "react";
-import CropTable from "./Table.js"
-import barley from "./barley.jpg";
-import corn from "./corn.jpg";
-import cotton from "./cotton.jpg";
-import canola from "./canola.jpg";
-import oats from "./oats.jpg";
-import wheat from "./wheat.jpg";
-import step1 from "./step1.jpg";
-import step2 from "./step2.jpg";
-import step3 from "./step3.jpg";
-import step4 from "./step4.jpg";
-import step5 from "./step5.jpg";
-import step6 from "./step6.jpg";
-import step7 from "./step7.JPG";
-import step8 from "./step8.jpg";
-import step9 from "./step9.jpg";
-import fertilizer from "./fertilizer.jpg";
-import herbicide from "./herbicide.jpg";
-import "./farmingInfo.css";
+import CropTable from "../Components/Table";
+import barley from "../Utils/barley.jpg";
+import corn from "../Utils/corn.jpg";
+import cotton from "../Utils/cotton.jpg";
+import canola from "../Utils/canola.jpg";
+import oats from "../Utils/oats.jpg";
+import wheat from "../Utils/wheat.jpg";
+import step1 from "../Utils/step1.jpg";
+import step2 from "../Utils/step2.jpg";
+import step3 from "../Utils/step3.jpg";
+import step4 from "../Utils/step4.jpg";
+import step5 from "../Utils/step5.jpg";
+import step6 from "../Utils/step6.jpg";
+import step7 from "../Utils/step7.JPG";
+import step8 from "../Utils/step8.jpg";
+import step9 from "../Utils/step9.jpg";
+import fertilizer from "../Utils/fertilizer.jpg";
+import herbicide from "../Utils/herbicide.jpg";
+import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {
   return (
@@ -272,6 +272,7 @@ const FarmInfo = () => {
           </li>
         </ul>
         <h3>Herbicide steps:</h3>
+        <p>Here is a step-by-step guide to applying herbicides:</p>
         <ul className="crop-care-steps-list">
           <li>
             <img />

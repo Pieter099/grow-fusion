@@ -1,10 +1,10 @@
 import React from "react";
 
-import YouTube from "./YouTube.png";
-import X from "./X.jpg.avif";
-import Facebook from "./Facebook.png";
+import YouTube from "../Utils/YouTube.png";
+import X from "../Utils/X.jpg.avif";
+import Facebook from "../Utils/Facebook.png";
 
-import "./contacts.css";
+import "../Styles/contacts.css";
 
 const Contacts = () => {
   return (
@@ -15,7 +15,7 @@ const Contacts = () => {
         contact us via.
       </p>
       <p>
-        Email: <a href="mailto:agri-usa@gmail.com">agri-usa@gmail.com</a>
+        Email: <a href="mailto:grow-fusion@gmail.com">grow-fusion@gmail.com</a>
       </p>
       <h3>Follow us on:</h3>
       <p>If you want to hear more from us, you can follow us at... .</p>

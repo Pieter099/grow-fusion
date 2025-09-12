@@ -1,15 +1,15 @@
 import React from "react";
-import "./app.css";
-import NavBar from "./NavBar";
-import Home from "./Home";
-import About from "./About";
-import FarmInfo from "./FarmingInfo";
-import Contacts from "./Contacts";
+import "../Styles/app.css";
+import MainNavBar from "../Components/NavBar";
+import Home from "../Components/Home";
+import About from "../Components/About";
+import FarmInfo from "../Components/FarmingInfo";
+import Contacts from "../Components/Contacts";
 
 const App = () => {
   return (
     <body>
-      <NavBar />
+      <MainNavBar />
       <section id="home">
         <Home />
       </section>

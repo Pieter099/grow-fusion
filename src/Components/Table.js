@@ -1,5 +1,5 @@
 import React from "react";
-import "./table.css";
+import "../Styles/table.css";
 
 const cropsData = [
   { name: "Barley", planting: ["Mar", "Apr", "Oct", "Nov"], harvesting: ["Jun", "Jul", "Aug"] },
