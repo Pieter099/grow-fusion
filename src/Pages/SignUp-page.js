@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../Styles/signUp-page.css"
 import SignUp from "../Components/SignUp";
 
 const SignUpPage = () => {
     return (
         <body>
+            <Link to="/">
+                <button>Home</button>
+            </Link>
             <h2>Sign up and join GrowFusion Today!</h2>
             <picture></picture>
             <p>
