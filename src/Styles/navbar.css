@@ -34,3 +34,20 @@
 .main-navbar ul li:hover {
   border-bottom: 3px solid #fff;
 }
+
+.main-navbar ul li button {
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.main-navbar ul li button:hover {
+  background-color: white;
+  color: green;
+  border: none;
+}
