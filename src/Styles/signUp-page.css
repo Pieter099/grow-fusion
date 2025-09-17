@@ -1,0 +1,46 @@
+.sign-up-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: green;
+}
+
+.sign-up-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+}
+
+.home-btn {
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.home-btn:hover {
+    background-color: white;
+    color: green;
+    border: none;
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin: 20px auto;
+}
+
+summary p {
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin: 0;
+}
