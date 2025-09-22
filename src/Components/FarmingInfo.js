@@ -18,6 +18,7 @@ import step8 from "../Utils/step8.jpg";
 import step9 from "../Utils/step9.jpg";
 import fertilizer from "../Utils/fertilizer.jpg";
 import herbicide from "../Utils/herbicide.jpg";
+import thumbNail from "../Utils/thumbNail.jpg.jpg";
 import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {
@@ -159,6 +160,12 @@ const FarmInfo = () => {
               <strong>Step 9. Final Inspection:</strong> 
               Walk the field to inspect for any remaining debris, uneven areas, or issues that might hinder planting. Address any problems before proceeding to sowing seeds.
             </p>
+          </li>
+          <li className="video-link">
+            <p>If you want to see farmers implementing these steps on a field, watch the video below to see how they do it.</p>
+            <a href="https://youtu.be/jqa2ywtDwJc" target="_blank" rel="noopener noreferrer">
+              <img src={thumbNail} alt="thumb-nail" />
+            </a>
           </li>
         </ul>
         <p>For a more in-depth explanation of soil preparation techniques and considerations, <a href="https://www.fao.org/4/y4360e/y4360e0a.htm?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Visit</a></p>

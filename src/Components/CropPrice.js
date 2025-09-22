@@ -2,7 +2,7 @@ import React from "react";
 
 const CropPrice = () => {
   return (
-    <div></div>
+    <div className="crop-price-section"></div>
   )
 };
 
