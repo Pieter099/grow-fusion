@@ -3,20 +3,23 @@
     height: auto;
     margin: 10px;
     border-radius: 10px;
-  }
+}
   
-  figure {
+figure {
     align-items: center;
     justify-content: center;
     display: inline-block;
-  }
+}
   
-  figure a {
+figure a {
     margin: 20px;
-  }
+}
   
-  figure a:hover {
+figure a:hover {
     cursor: pointer;
     border-bottom: 4px solid green;
-  }
+}
   
+@media screen only and (min-width: 600px) and (max-width: 768px) {}
+
+@media screen only and (min-width: 320px) and (max-width: 500px) {}

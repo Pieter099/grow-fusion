@@ -168,3 +168,7 @@ main .crop-care .crop-care-info-list {
 }
 
 /* fertilize and herbicide steps */
+
+@media screen only and (min-width: 600px) and (max-width: 768px) {}
+
+@media screen only and (min-width: 320px) and (max-width: 500px) {}

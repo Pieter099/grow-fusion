@@ -57,3 +57,7 @@ form .submit-btn:hover {
     border-color: lightgray;
     color: lightgray;
 }
+
+@media screen only and (min-width: 600px) and (max-width: 768px) {}
+
+@media screen only and (min-width: 320px) and (max-width: 500px) {}
