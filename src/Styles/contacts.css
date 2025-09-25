@@ -4,6 +4,10 @@ footer p {
     color: white;
 }
 
+footer h3 {
+  border: none;
+}
+
 footer a {
   color: white;
 }
