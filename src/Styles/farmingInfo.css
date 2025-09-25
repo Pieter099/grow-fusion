@@ -53,7 +53,7 @@ main .cropProperties .crop-properties-list {
   background-color: #D4B48A;
 }
 
-.cropSeason CropTable {
+.cropSeason .CropTable {
   align-items: center;
   justify-content: center;
 }
@@ -64,6 +64,11 @@ main .soilPrep {
     letter-spacing: 2px;
     word-spacing: 3px;
     line-height: 20px;
+}
+
+.soilPrep h3,
+.soilPrep p {
+  color: white;
 }
 
 main .soilPrep .soil-prep-steps {
@@ -97,6 +102,7 @@ main .soilPrep .soil-prep-steps {
 .soil-prep-steps li p {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .soilPrep .soil-prep-steps .video-link {
@@ -116,6 +122,7 @@ main .soilPrep .soil-prep-steps {
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: white;
 }
 
 .soilPrep .soil-prep-steps .video-link img {
@@ -132,6 +139,11 @@ main .crop-care {
   letter-spacing: 2px;
   word-spacing: 3px;
   line-height: 20px;
+}
+
+.crop-care h3,
+.crop-care p {
+  color: white;
 }
 
 main .crop-care .crop-care-info-list {
@@ -165,9 +177,18 @@ main .crop-care .crop-care-info-list {
 .crop-care-info-list li p {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 /* fertilize and herbicide steps */
+.crop-care-steps h3,
+.crop-care-steps p {
+  color: white;
+}
+
+.crop-care-steps-list p {
+  color: white;
+}
 
 @media screen only and (min-width: 600px) and (max-width: 768px) {}
 
