@@ -6,6 +6,16 @@ body {
   margin: 0;
 }
 
+@media screen only and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+  background-color: #E5C99F;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+}
+
 @media screen only and (min-width: 600px) and (max-width: 768px) {}
 
 @media screen only and (min-width: 320px) and (max-width: 500px) {}

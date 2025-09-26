@@ -10,6 +10,20 @@ body {
   );
 }
 
+@media screen only and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+  background: linear-gradient(
+    180deg,
+    #E5C99F 0%,
+    #D4B48A 20%,
+    #B98C5E 40%,
+    #7E4614 60%,
+    #5A3416 80%,
+    #332421 100%
+  );
+}
+}
+
 @media screen only and (min-width: 600px) and (max-width: 768px) {}
 
 @media screen only and (min-width: 320px) and (max-width: 500px) {}

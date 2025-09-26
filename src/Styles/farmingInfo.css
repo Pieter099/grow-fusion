@@ -190,6 +190,203 @@ main .crop-care .crop-care-info-list {
   color: white;
 }
 
+@media screen only and (min-width: 1024px) and (max-width: 1440px) {
+  h3 {
+  padding: 10px;
+  border: 3px solid green;
+  border-radius: 25px;
+  color: green;
+  margin: 0 250px;
+}
+
+/* crop information */
+main .cropProperties {
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 20px;
+}
+
+main .cropProperties .crop-properties-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 250px;
+}
+
+.cropProperties .crop-properties-list li {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid green;
+  border-top: 2px solid green;
+}
+
+.crop-properties-list li img {
+  height: 300px;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.crop-properties-list li p {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* crop seasons */
+.cropSeason {
+  background-color: #D4B48A;
+}
+
+.cropSeason .CropTable {
+  align-items: center;
+  justify-content: center;
+}
+
+/* soil prep section */
+main .soilPrep {
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+
+.soilPrep h3,
+.soilPrep p {
+  color: white;
+}
+
+main .soilPrep .soil-prep-steps {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 250px;
+}
+
+.soilPrep .soil-prep-steps li {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid green;
+    border-top: 2px solid green;
+}
+
+.soil-prep-steps li img {
+    height: 300px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.soil-prep-steps li p {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.soilPrep .soil-prep-steps .video-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.soilPrep .soil-prep-steps .video-link p,
+.soilPrep .soil-prep-steps .video-link a {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+.soilPrep .soil-prep-steps .video-link img {
+  height: 450px;
+  width: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* crop care section (fertilize, herbicide) */
+main .crop-care {
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 20px;
+}
+
+.crop-care h3,
+.crop-care p {
+  color: white;
+}
+
+main .crop-care .crop-care-info-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 50px;
+}
+
+.crop-care .crop-care-info-list li {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid green;
+  border-top: 2px solid green;
+}
+
+/* Reduce the margin between image and paragraph */
+.crop-care-info-list li img {
+  height: 300px;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 1px; /* Reduced from 50px */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.crop-care-info-list li p {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  margin-left: 1px; /* Reduced from 50px */
+}
+
+/* fertilize and herbicide steps */
+.crop-care-steps h3,
+.crop-care-steps p {
+  color: white;
+}
+
+.crop-care-steps-list p {
+  color: white;
+}
+}
+
 @media screen only and (min-width: 600px) and (max-width: 768px) {}
 
 @media screen only and (min-width: 320px) and (max-width: 500px) {}

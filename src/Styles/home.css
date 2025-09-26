@@ -60,6 +60,61 @@
     margin-right: 350px;
 }
 
+@media screen only and (min-width: 1020px) and (max-width: 1440px) {
+    .home-container {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18;
+    background-color: #e6cfa1;
+    margin-top: 0;
+    padding-top: 30px;
+}
+  
+.mainImg {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    margin: 0;
+}
+  
+.head .mainHeading {
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 70px;
+    font-weight: bold;
+    color: beige;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+}
+  
+.box {
+    z-index: 99;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 250px;
+    width: 100%;
+}
+  
+.mainSubHeading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border: 2px solid beige;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+}
+
 @media screen only and (min-width: 600px) and (max-width: 768px) {}
 
 @media screen only and (min-width: 320px) and (max-width: 500px) {}
