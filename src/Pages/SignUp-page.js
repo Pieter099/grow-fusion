@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import signUpImg from "../Utils/signUpImg.jpg";
 import "../Styles/signUp-page.css"
-import SignUp from "../Components/SignUp";
+import SignUp from "../Features/SignUp";
 
 const SignUpPage = () => {
     return (

@@ -8,7 +8,7 @@ const AboutInfo = () => {
       <h2>About Us!</h2>
       <section className="logo-and-summary">
         <picture className="logo-box">
-          <img src={Logo} alt="site-logo" />
+          <img src={Logo} alt="site-logo" className="logo-img"/>
         </picture>
         <summary>
           <p>
