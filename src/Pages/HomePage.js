@@ -8,7 +8,7 @@ import Contacts from "../Components/Contacts";
 
 const HomePage = () => {
   return (
-    <body>
+    <div className="homepage">
       <MainNavBar />
       <section id="home">
         <Home />
@@ -22,7 +22,7 @@ const HomePage = () => {
       <section id="contact">
         <Contacts />
       </section>
-    </body>
+    </div>
   );
 };
 

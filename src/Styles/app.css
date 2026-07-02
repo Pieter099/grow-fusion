@@ -1,21 +1,60 @@
-body {
-  background-color: #E5C99F;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+/* ==========================
+   Grow Fusion Design System
+========================== */
+
+:root {
+  /* Colours */
+  --primary-green: #2e7d32;
+  --secondary-green: #4caf50;
+  --accent-gold: #d4a017;
+  --background: #f6f4ed;
+  --surface: #ffffff;
+
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+
+  /* Layout */
+  --max-width: 1200px;
+
+  /* Border Radius */
+  --radius: 12px;
+
+  /* Shadows */
+  --shadow: 0 6px 20px rgba(0,0,0,.08);
+
+  /* Spacing */
+  --spacing-xs: .5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 2560px) {
-  body {
-  background-color: #E5C99F;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+/* ==========================
+   Global Reset
+========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/*
+@media only screen and (min-width: 1280px) and (max-width: 2560px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {}
+*/
