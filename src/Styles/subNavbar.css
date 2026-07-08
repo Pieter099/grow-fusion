@@ -1,77 +1,77 @@
 .sub-navbar {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  margin: 0 auto;
-  padding: 0;
-  border-radius: 10px;
+  width: min(100%, 1100px);
+  margin: 2rem auto;
+  padding: 0.5rem;
+
+  background: var(--primary-green);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .sub-navbar ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  list-style-type: none;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  gap: 0.5rem;
+}
+
+.sub-navbar li {
   margin: 0;
 }
 
-.sub-navbar ul li {
-  margin: 0 20px;
-  padding: 20px 15px;
-}
+.sub-navbar a {
+  display: block;
 
-.sub-navbar ul li a {
-  text-decoration: none;
+  padding: .75rem 1.1rem;
+
   color: white;
-  font-size: 20px;
-    font-weight: bold;
+  text-decoration: none;
+
+  font-weight: 600;
+  border-radius: 8px;
+
+  transition:
+    background .25s,
+    transform .25s;
 }
 
-.sub-navbar ul li:hover {
-  border-bottom: 3px solid #fff;
+.sub-navbar a:hover {
+  background: rgba(255,255,255,.15);
+  transform: translateY(-2px);
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 2560px) {
+.sub-navbar a:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+
   .sub-navbar {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  margin: 0 auto;
-  padding: 0;
-  border-radius: 10px;
-}
 
-.sub-navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style-type: none;
-  margin: 0;
-}
+    width: calc(100% - 2rem);
 
-.sub-navbar ul li {
-  margin: 0 20px;
-  padding: 20px 15px;
-}
+  }
 
-.sub-navbar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
+  .sub-navbar ul {
 
-.sub-navbar ul li:hover {
-  border-bottom: 3px solid #fff;
-}
-}
+    flex-direction: column;
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+    align-items: stretch;
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {}
+  }
+
+  .sub-navbar a {
+
+    text-align: center;
+
+  }
+
+}
