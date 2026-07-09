@@ -9,6 +9,27 @@ th,
 tr,
 td {
     border: 1px solid #111;
+    padding: 0.75rem;
+    min-width: 60px;
+}
+
+thead {
+  background: var(--primary-green);
+  color:white;
+}
+
+tbody tr:nth-child(even){
+  background:#c4a484;
+}
+
+tbody tr:hover{
+  background: #00ab41;
+  color: white;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 .cropTable table {
@@ -33,17 +54,27 @@ td {
 }
 
 .legend .legendInfo .info-1 {
-    width: 15px;
-    height: 15px;
-    border: 1px solid #111;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
     background-color: #90ee90;
     margin-right: 5px;
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
 .legend .legendInfo .info-2 {
-    width: 15px;
-    height: 15px;
-    border: 1px solid #111;
+    width: 20px;
+    height: 20px;
     background-color: #ff8c00;
     margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+}
+
+.planting {
+     background-color: #90EE90; 
+}
+
+.harvesting {
+    background-color: #FF8C00;
 }
