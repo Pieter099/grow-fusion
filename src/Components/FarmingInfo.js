@@ -273,8 +273,7 @@ const FarmInfo = () => {
             </p>
           </li>
         </ul>
-        <br />
-        <h3>Herbicide steps:</h3>
+        <h3 className="top-space">Herbicide steps:</h3>
         <p className="intro">Here is a step-by-step guide to applying herbicides:</p>
         <ul className="info-list">
           <li>
