@@ -23,7 +23,7 @@ import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {
   return (
-    <main className="main-section">
+    <main className="info-section">
       <h2>Farming Information</h2>
       <SubNavbar />
       <section className="cropPrices" id="crop-price">
@@ -31,8 +31,8 @@ const FarmInfo = () => {
       </section>
       <section className="cropProperties" id="crop-info">
         <h3>Additional Crop information:</h3>
-        <p>Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
-        <ul className="crop-properties-list">
+        <p className="intro">Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
+        <ul className="info-list">
           <li>
             <img src={barley} alt="Barley" />
             <p>
@@ -91,13 +91,13 @@ const FarmInfo = () => {
       </section>
       <section className="cropSeason" id="crop-calender">
         <h3>Crop Seasons:</h3>
-        <p>Here is a table that outlines the planting and harvesting seasons for various crops:</p>
+        <p className="intro">Here is a table that outlines the planting and harvesting seasons for various crops:</p>
         <CropTable />
       </section>
       <section className="soilPrep" id="soil-prep">
         <h3>Preparing your soil:</h3>
-        <p>Preparing soil for crop planting using farming machinery involves several key steps to ensure optimal soil conditions for seed germination and plant growth. Here’s a step-by-step guide:</p>
-        <ul className="soil-prep-steps">
+        <p className="intro">Preparing soil for crop planting using farming machinery involves several key steps to ensure optimal soil conditions for seed germination and plant growth. Here’s a step-by-step guide:</p>
+        <ul className="info-list">
           <li>
             <img src={step1} alt="Step 1" />
             <p>
@@ -172,8 +172,8 @@ const FarmInfo = () => {
       </section>
       <section className="crop-care" id="crop-treatment-info">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
-        <p>Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
-        <ul className="crop-care-info-list">
+        <p className="intro">Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
+        <ul className="info-list">
           <li>
             <img src={fertilizer} alt="Fertilizer" />
             <p>
@@ -216,10 +216,9 @@ const FarmInfo = () => {
       </section>
       <section className="crop-care-steps" id="crop-treatment-steps">
         <h3>Fertilizing steps:</h3>
-        <p>Here is a step-by-step guide to applying fertilizer:</p>
-        <ul className="crop-care-steps-list">
+        <p className="intro">Here is a step-by-step guide to applying fertilizer:</p>
+        <ul className="info-list">
           <li>
-            <img />
             <p>
               <strong>Step 1. Assess Your Field:</strong>
 	            •	Soil Testing: Begin by taking a soil sample to determine nutrient levels. This helps you decide which type of fertilizer and application rate is best for your crops.
@@ -227,7 +226,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong> Step 2. Choose the Right Fertilizer:</strong>
              	•	Based on Soil Test: Use the test results to select a fertilizer that provides the nutrients your soil lacks (e.g., nitrogen, phosphorus, potassium).
@@ -235,7 +233,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 3. Prepare Equipment and Machinery:</strong>
 	            •	Manual Application: For smaller fields or precision work, have tools like a spreader or hand-held applicator ready.
@@ -244,7 +241,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 4. Calibrate Your Equipment:</strong>
 	            •	Determine Application Rate: Based on the fertilizer package instructions and soil test recommendations, calculate the precise amount needed per acre or hectare.
@@ -252,7 +248,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 5. Application Process:</strong>
 	            •	Manual Application: If applying by hand, evenly distribute the fertilizer using a spreader or by walking systematically through the field. Work in rows or sections to avoid overlaps.
@@ -263,7 +258,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 6. Post-Application Steps:</strong>
 	            •	Incorporation: Depending on the crop and soil type, you might need to lightly till the field after application to help the fertilizer mix with the soil. This step is crucial if you’re using a granular fertilizer.
@@ -272,7 +266,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 7. Safety and Environmental Considerations:</strong>
 	            •	Personal Protection: Always wear protective gear—gloves, goggles, and a mask—especially if you’re handling chemicals manually.
@@ -280,11 +273,11 @@ const FarmInfo = () => {
             </p>
           </li>
         </ul>
+        <br />
         <h3>Herbicide steps:</h3>
-        <p>Here is a step-by-step guide to applying herbicides:</p>
-        <ul className="crop-care-steps-list">
+        <p className="intro">Here is a step-by-step guide to applying herbicides:</p>
+        <ul className="info-list">
           <li>
-            <img />
             <p>
               <strong>Step 1. Pre-Application Planning:</strong>
 	            •	Identify the Weed Problem: Determine which weed species are present and select an herbicide that targets them.
@@ -292,7 +285,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 2.	Equipment Preparation:</strong>
 	            •	Select the Right Machinery: Ensure your sprayer or application equipment is suitable for the herbicide type and field size.
@@ -300,7 +292,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 3.	Mixing the Herbicide:</strong>
 	            •	Follow Safety Protocols: Wear appropriate personal protective equipment (PPE) like gloves, goggles, and coveralls.
@@ -308,14 +299,12 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 4.	Weather Check:</strong>
 	            •	Optimal Conditions: Verify that weather conditions are suitable—avoid application during high winds, heavy rain, or extreme temperatures to minimize drift and ensure proper absorption.
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 5.	Application Process:</strong>
 	            •	Uniform Application: Begin spraying with consistent speed and overlap, ensuring even distribution across the field.
@@ -323,7 +312,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step 6.	Post-Application Procedures:</strong>
 	            •	Equipment Cleaning: Thoroughly clean all machinery and nozzles to avoid residue build-up, which can lead to corrosion or affect future applications.
@@ -331,7 +319,6 @@ const FarmInfo = () => {
             </p>
           </li>
           <li>
-            <img />
             <p>
               <strong>Step  7.	Follow-Up:</strong>
 	            •	Evaluate Effectiveness: After the recommended period, inspect the field to assess the herbicide’s performance.
