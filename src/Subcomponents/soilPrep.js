@@ -10,7 +10,7 @@ import step8 from "../Utils/step8.jpg";
 import step9 from "../Utils/step9.jpg";
 import thumbNail from "../Utils/thumbNail.jpg.jpg";
 
-const soilPrep = () => {
+const SoilPrep = () => {
   return (
     <section className="soilPrep" id="soil-prep">
         <h3>Preparing your soil:</h3>
@@ -92,4 +92,4 @@ const soilPrep = () => {
   )
 };
 
-export default soilPrep;
+export default SoilPrep;

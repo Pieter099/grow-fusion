@@ -2,8 +2,9 @@ import React from "react";
 import fertilizer from "../Utils/fertilizer.jpg";
 import herbicide from "../Utils/herbicide.jpg";
 
-const cropCare = () => {
+const CropCare = () => {
     return (
+      <>
       <section className="crop-care" id="crop-treatment-info">
         <h3>Additional information on Fertilizing and Herbicide:</h3>
         <p className="intro">Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
@@ -160,7 +161,8 @@ const cropCare = () => {
           </li>
         </ul>
       </section>
+      </>
     )
 };
 
-export default cropCare;
+export default CropCare;
