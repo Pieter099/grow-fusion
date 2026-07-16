@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/homepage.css";
 import Home from "../Components/Home";
 import About from "../Components/About";
 import FarmInfo from "../Components/FarmingInfo";

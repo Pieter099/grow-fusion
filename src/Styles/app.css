@@ -53,6 +53,22 @@ body {
   line-height: 1.6;
 }
 
+.homepage {
+  background: linear-gradient(
+    180deg,
+    #E5C99F 0%,
+    #D4B48A 20%,
+    #B98C5E 40%,
+    #7E4614 60%,
+    #5A3416 80%,
+    #332421 100%
+  );
+}
+
+.homepage section {
+  scroll-margin-top: 3rem;
+}
+
 /*
 @media only screen and (min-width: 1280px) and (max-width: 2560px) {}
 
