@@ -12,7 +12,8 @@ import thumbNail from "../Utils/thumbNail.jpg.jpg";
 
 const SoilPrep = () => {
   return (
-    <section className="soilPrep" id="soil-prep">
+    <>
+      <section className="soilPrep" id="soil-prep">
         <h3>Preparing your soil:</h3>
         <p className="intro">Preparing soil for crop planting using farming machinery involves several key steps to ensure optimal soil conditions for seed germination and plant growth. Here’s a step-by-step guide:</p>
         <ul className="info-list">
@@ -88,7 +89,7 @@ const SoilPrep = () => {
         </ul>
         <p>For a more in-depth explanation of soil preparation techniques and considerations, <a href="https://www.fao.org/4/y4360e/y4360e0a.htm?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Visit</a></p>
       </section>
-
+    </>
   )
 };
 

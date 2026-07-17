@@ -8,6 +8,7 @@ import wheat from "../Utils/wheat.jpg";
 
 const CropInfo = () => {
     return (
+      <>
         <section className="cropProperties" id="crop-info">
             <h3>Additional Crop information:</h3>
             <p className="intro">Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
@@ -68,6 +69,7 @@ const CropInfo = () => {
           </li>
         </ul>
       </section>
+      </>
     )
 }
 

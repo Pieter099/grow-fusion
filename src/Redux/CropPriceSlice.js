@@ -1,10 +1,11 @@
 import {createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { getCropPrices } from '../API/CropPrice';
 
 export const fetchCropPrices = createAsyncThunk(
   'cropPrices/fetchCropPrices',
   async () => {
-    const response = await fetch();
-    return response.data;
+    const data = await getCropPrices();
+    return data;
   }
 );
 
