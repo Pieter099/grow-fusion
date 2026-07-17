@@ -4,7 +4,7 @@ import SubNavbar from "../Subcomponents/SubNavbar";
 import SoilPrep from "../Subcomponents/soilPrep";
 import CropCare from "../Subcomponents/cropCare";
 import CropInfo from "../Subcomponents/cropInfo";
-import CropPrice from "../API/CropPrice";
+import CropPrice from "../Subcomponents/cropPrice";
 import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {

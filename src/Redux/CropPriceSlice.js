@@ -1,5 +1,5 @@
 import {createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { getCropPrices } from '../API/CropPrice';
+import { getCropPrices } from '../API/cropPriceAPI';
 
 export const fetchCropPrices = createAsyncThunk(
   'cropPrices/fetchCropPrices',
