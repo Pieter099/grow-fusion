@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCropPrices } from "../Redux/CropPriceSlice";
+import "../Styles/cropPrice.css";
 
 const CropPrice = () => {
   const dispatch = useDispatch();
@@ -35,6 +36,12 @@ const CropPrice = () => {
 const commodities = Object.values(prices).filter(
   (item) => wantedCrops.includes(item.display_name)
 );
+
+console.log("Prices:");
+console.log(prices);
+
+console.log("Commodities:");
+console.log(commodities);
 
   return (
     <table className="price-table">
