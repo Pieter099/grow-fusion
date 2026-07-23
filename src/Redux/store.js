@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cropPriceReducer from './farmConSlice';
+import weatherReducer from './weatherSlice';
 
 const store = configureStore({
   reducer: {
-    cropPrices: cropPriceReducer
+    weather: weatherReducer
   }
 });
 
