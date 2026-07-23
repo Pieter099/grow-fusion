@@ -1,5 +1,4 @@
-import {createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { getCropPrices } from '../API/cropPriceAPI';
+/*import {createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchCropPrices = createAsyncThunk(
   'cropPrices/fetchCropPrices',
@@ -12,7 +11,7 @@ export const fetchCropPrices = createAsyncThunk(
 const cropPriceSlice = createSlice({
   name: 'cropPrices',
   initialState: {
-    prices: [],
+    prices: {},
     status: 'idle',
     error: null
   },
@@ -34,3 +33,4 @@ const cropPriceSlice = createSlice({
 });
 
 export default cropPriceSlice.reducer;
+*/

@@ -4,7 +4,6 @@ import SubNavbar from "../Subcomponents/SubNavbar";
 import SoilPrep from "../Subcomponents/soilPrep";
 import CropCare from "../Subcomponents/cropCare";
 import CropInfo from "../Subcomponents/cropInfo";
-import CropPrice from "../Subcomponents/cropPrice";
 import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {
@@ -12,10 +11,9 @@ const FarmInfo = () => {
     <main className="info-section">
       <h2>Farming Information</h2>
       <SubNavbar />
-      <section className="cropPrices" id="crop-price">
-        <h3>Prices of crops:</h3>
-        <p className="intro">Here is a table that outlines the prices of various crops:</p>
-        <CropPrice />
+      <section className="farm-state" id="farm-condition">
+        <h3>Farm Conditions</h3>
+        <p className="intro">Here is a table that outlines the current conditions of your farm:</p>
       </section>
       <CropInfo />
       <section className="cropSeason" id="crop-calender">

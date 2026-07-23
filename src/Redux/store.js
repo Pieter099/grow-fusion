@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cropPriceReducer from './CropPriceSlice';
+import cropPriceReducer from './farmConSlice';
 
 const store = configureStore({
   reducer: {

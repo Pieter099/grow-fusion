@@ -6,7 +6,7 @@ const SubNavbar = () => {
         <nav className="sub-navbar" aria-label="Farm information navigation">
           <ul>
             <li>
-              <a href="#crop-price">Crop Prices</a>
+              <a href="#farm-condition">Farm Conditions</a>
             </li>
             <li>
               <a href="#crop-info">Crop Info</a>
