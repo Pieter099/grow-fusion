@@ -5,13 +5,12 @@ import { fetchWeatherData } from '../Redux/weatherSlice';
 import {
     WiThermometer,
     WiHumidity,
-    WiStrongWind
-   // WiBarometer,
+    WiStrongWind,
+    WiBarometer,
    // WiCloudy,
-   // WiRain,
+    WiRain,
    // WiSnowflakeCold,
-   // WiDaySunny,
-   // WiNightClear
+   // WiDaySunny
 } from 'react-icons/wi';
 
 const Weather = () => {
@@ -40,21 +39,48 @@ const Weather = () => {
         return <div>Error: {error}</div>;
     }
 
+    const current = weather.current;
+
     if (!weather.current) {
         return null;
     }
 
-    const current = weather.current;
+    const weatherDescriptions = {
+    0: "Clear Sky",
+    1: "Mainly Clear",
+    2: "Partly Cloudy",
+    3: "Overcast",
+    45: "Fog",
+    48: "Fog",
+    51: "Light Drizzle",
+    53: "Moderate Drizzle",
+    55: "Heavy Drizzle",
+    61: "Light Rain",
+    63: "Moderate Rain",
+    65: "Heavy Rain",
+    71: "Snow",
+    80: "Rain Showers",
+    95: "Thunderstorm"
+    };
 
-   // weather.current.temperature_2m
+    const weatherText = weatherDescriptions[current.weather_code] || 'Unknown';
 
     return (
         <>
           <section className="weather-card">
+            <div className="weather-item">
+              <h4>Conditions</h4>
+              <p>{weatherText}</p>
+            </div>
             <div className='weather-item'>
                 <WiThermometer size={55} />
                 <h4>Temperature:</h4>
                 <p>{current.temperature_2m}°C</p>
+            </div>
+            <div className="weather-item">
+              <WiThermometer size={55} />
+              <h4>Feels Like</h4>
+              <p>{current.apparent_temperature}°C</p>
             </div>
             <div className='weather-item'>
                 <WiHumidity size={55}/>
@@ -65,6 +91,21 @@ const Weather = () => {
                 <WiStrongWind size={55}/>
                 <h4>Wind Speed:</h4>
                 <p>{current.wind_speed_10m}km/h</p>
+            </div>
+            <div className="weather-item">
+              <WiRain size={55} />
+              <h4>Rain</h4>
+              <p>{current.rain} mm</p>
+            </div>
+            <div className="weather-item">
+              <WiRain size={55} />
+              <h4>Precipitation</h4>
+              <p>{current.precipitation} mm</p>
+            </div>
+            <div className="weather-item">
+              <WiBarometer size={55} />
+              <h4>Pressure</h4>
+              <p>{current.surface_pressure} hPa</p>
             </div>
           </section>
         </>

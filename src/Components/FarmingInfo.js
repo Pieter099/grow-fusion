@@ -4,6 +4,7 @@ import SubNavbar from "../Subcomponents/SubNavbar";
 import SoilPrep from "../Subcomponents/soilPrep";
 import CropCare from "../Subcomponents/cropCare";
 import CropInfo from "../Subcomponents/cropInfo";
+import Weather from "../Subcomponents/weather";
 import "../Styles/farmingInfo.css";
 
 const FarmInfo = () => {
@@ -14,6 +15,7 @@ const FarmInfo = () => {
       <section className="farm-state" id="farm-condition">
         <h3>Farm Conditions</h3>
         <p className="intro">Here is a table that outlines the current conditions of your farm:</p>
+        <Weather />
       </section>
       <CropInfo />
       <section className="cropSeason" id="crop-calender">
