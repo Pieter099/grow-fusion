@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeatherData } from '../Redux/weatherSlice';
+import { getCoordinates } from '../API/geocodingAPI';
 import "../Styles/weather.css"
 
 import {
@@ -178,6 +179,23 @@ const Weather = () => {
             icon: <WiCloud size={55} />
         };
 
+    //.====================
+    // search function
+    // ====================
+
+    const handleSearch = async () => {
+        try {
+            const location = await getCoordinates(city);
+
+            dispatch(fetchWeatherData({
+                latitude: location.latitude,
+                longitude: location.longitude
+            }));
+        } catch (error) {
+            alert(error.message);
+        }
+    };
+
     return (
         <>
             <section className='search'>
@@ -188,7 +206,7 @@ const Weather = () => {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                   />
-                  <button>
+                  <button onClick={handleSearch}>
                     Search
                   </button>
                 </div>
