@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeatherData } from '../Redux/weatherSlice';
+import "../Styles/weather.css"
 
 import {
     WiThermometer,
@@ -20,7 +21,6 @@ import {
     WiHot,
     WiHail
 } from 'react-icons/wi';
-
 
 // ---------------------------------------
 // Weather Code Descriptions + Icons
@@ -161,16 +161,13 @@ const Weather = () => {
 
     }
 
-
     const current = weather.current;
-
-
 
     // ---------------------------------------
     // Temperature Icon
     // ---------------------------------------
 
-    let temperatureIcon = <WiThermometer size={55} />;
+    let temperatureIcon = null;
 
     if (current.temperature_2m < 0) {
 
@@ -184,8 +181,6 @@ const Weather = () => {
 
     }
 
-
-
     // ---------------------------------------
     // Current Weather
     // ---------------------------------------
@@ -198,8 +193,6 @@ const Weather = () => {
             icon: <WiCloud size={55} />
 
         };
-
-
 
     return (
 
@@ -220,22 +213,17 @@ const Weather = () => {
 
                 <div className="weather-item">
 
-                    {temperatureIcon}
+                    <WiThermometer size={55} />
 
                     <h4>Temperature</h4>
-
+                    
                     <p>{current.temperature_2m}°C</p>
-
-                </div>
-
-
-                <div className="weather-item">
-
-                    <WiThermometer size={55} />
 
                     <h4>Feels Like</h4>
 
                     <p>{current.apparent_temperature}°C</p>
+
+                    {temperatureIcon}
 
                 </div>
 
