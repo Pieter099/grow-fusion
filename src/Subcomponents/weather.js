@@ -154,11 +154,28 @@ const Weather = () => {
         return <div>Error: {error}</div>;
     }
 
-    if (!weather.current) {
+    if (!weather.current || !weather.daily) {
         return null;
     }
 
     const current = weather.current;
+
+    const daily = weather.daily;
+
+    const forecast = daily.time.map((date, index) => ({
+    date,
+    weatherCode: daily.weather_code[index],
+    maxTemp: daily.temperature_2m_max[index],
+    minTemp: daily.temperature_2m_min[index],
+    rain: daily.rain[index],
+    windSpeed: daily.wind_speed_10m_max[index]
+}));
+
+const getDayName = (dateString) => {
+    return new Date(dateString).toLocaleDateString("en-US", {
+        weekday: "short"
+    });
+};
 
     const today = new Date();
 
@@ -276,6 +293,32 @@ const Weather = () => {
                     <p>{current.surface_pressure} hPa</p>
                 </div>
             </section>
+            <section className="forecast-card">
+                <h2>7-Day Forecast</h2>
+                <div className="forecast-container">
+                    {forecast.map((day, index) => {
+                    const condition =
+                    weatherConditions[day.weatherCode] || {
+                    text: "Unknown",
+                    icon: <WiCloud size={40}/>
+                    };
+                    return (
+                    <div
+                    className="forecast-item"
+                    key={day.date}
+                    >
+                    <h3>{getDayName(day.date)}</h3>
+                    {condition.icon}
+                    <p>{condition.text}</p>
+                    <p>High: {day.maxTemp}°C</p>
+                    <p>Low: {day.minTemp}°C</p>
+                    <p>Rain: {day.rain} mm</p>
+                    <p>Wind: {day.windSpeed} km/h</p>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
         </>
     );
 };

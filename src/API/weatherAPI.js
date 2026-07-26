@@ -16,19 +16,30 @@ export const getWeatherData = async (latitude, longitude) => {
         "weather_code"
     ].join(",");
 
+    const dailyWeather = [
+        "weather_code",
+        "temperature_2m_max",
+        "temperature_2m_min",
+        "rain",
+        "wind_speed_10m_max"
+    ].join(",");
+
     // Build the request URL
     const url =
         `${BASE_URL}` +
         `?latitude=${latitude}` +
         `&longitude=${longitude}` +
         `&current=${currentWeather}` +
+        `&daily=${dailyWeather}` +
         `&timezone=auto`;
 
     const response = await fetch(url);
 
-    if (!response.ok) {
-        throw new Error("Failed to fetch weather data");
-    }
+if (!response.ok) {
+    const errorText = await response.text();
+    console.log(errorText);
+    throw new Error(errorText);
+}
 
     return response.json();
 };
