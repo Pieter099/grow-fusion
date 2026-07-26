@@ -141,6 +141,11 @@ const Weather = () => {
 
     const [city, setCity] = useState('Pretoria');
 
+    const [location, setLocation] = useState({
+            city: "Pretoria",
+            country: "South Africa"
+        });
+
     if (status === "loading") {
         return <div>Loading...</div>;
     }
@@ -154,6 +159,15 @@ const Weather = () => {
     }
 
     const current = weather.current;
+
+    const today = new Date();
+
+    const currentDate = today.toLocaleDateString(undefined, {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
 
     // ---------------------------------------
     // Temperature Icon
@@ -187,6 +201,11 @@ const Weather = () => {
         try {
             const location = await getCoordinates(city);
 
+            setLocation({
+                city: location.name,
+                country: location.country
+            });
+
             dispatch(fetchWeatherData({
                 latitude: location.latitude,
                 longitude: location.longitude
@@ -211,6 +230,12 @@ const Weather = () => {
                   </button>
                 </div>
             </section>
+            <div className='location-name'>
+                <h2>
+                    {location.city}, {location.country}
+                </h2>
+                <p>{currentDate}</p>
+            </div>
             <section className="weather-card">
                 <div className="weather-item">
                     {currentWeatherCondition.icon}
