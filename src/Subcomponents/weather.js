@@ -167,7 +167,7 @@ const Weather = () => {
     weatherCode: daily.weather_code[index],
     maxTemp: daily.temperature_2m_max[index],
     minTemp: daily.temperature_2m_min[index],
-    rain: daily.rain[index],
+    rain: daily.rain_sum[index],
     windSpeed: daily.wind_speed_10m_max[index]
 }));
 

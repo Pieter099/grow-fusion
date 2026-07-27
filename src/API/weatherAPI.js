@@ -20,7 +20,7 @@ export const getWeatherData = async (latitude, longitude) => {
         "weather_code",
         "temperature_2m_max",
         "temperature_2m_min",
-        "rain",
+        "rain_sum",
         "wind_speed_10m_max"
     ].join(",");
 
