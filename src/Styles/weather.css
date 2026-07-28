@@ -91,3 +91,144 @@
     font-size: 1.2rem;
     font-weight: 400;
 }
+
+/*
+=======================================
+    Weekly Forecast
+=======================================
+*/
+
+.forecast-card h3 {
+    display: flex;
+    margin: 2rem auto; 
+    font-size: 2rem;
+    font-weight: 700;
+    color: #236027;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 18px;
+    padding: 25px;
+    background: rgba(0,128,0,.55);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .3s ease;
+}
+
+.forecast-container:hover {
+    transform: translateY(-6px);
+    background: rgba(0,128,0,.68);
+    box-shadow: 0 14px 28px rgba(0,0,0,.22);
+}
+
+/* ------------------------------------ */
+
+.forecast-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 8px;
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.forecast-item:last-child{
+    border-right: none;
+}
+
+/* ------------------------------------ */
+/* Day */
+
+.forecast-item .week-day {
+    width: 80%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding: 8px 0;
+    border: 2px solid rgba(255,255,255,.45);
+    border-radius: 999px;
+    letter-spacing: .5px;
+}
+
+/* ------------------------------------ */
+/* Weather icon */
+
+.forecast-item > svg{
+    font-size: 3.2rem;
+    color: white;
+    margin-bottom: 12px;
+}
+
+/* ------------------------------------ */
+/* Condition */
+
+.forecast-item p:first-of-type{
+    font-weight: 600;
+    font-size: .95rem;
+    margin-bottom: 16px;
+    min-height: 42px;
+}
+
+/* ------------------------------------ */
+/* Data */
+
+.forecast-item p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    font-size: .95rem;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.forecast-item p svg{
+    font-size: 1.7rem;
+    flex-shrink: 0;
+}
+
+/* ------------------------------------ */
+/* Tablet */
+
+@media (max-width:900px){
+    .forecast-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .forecast-item{
+        flex: 0 0 calc(50% - 20px);
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        padding: 20px 10px;
+    }
+
+    .forecast-item:last-child{
+        border-bottom: none;
+    }
+}
+
+/* ------------------------------------ */
+/* Phone */
+
+@media (max-width:600px){
+    .forecast-container{
+        flex-direction: column;
+    }
+
+    .forecast-item{
+        flex: 1;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        padding: 22px 0;
+    }
+
+    .forecast-item:last-child{
+        border-bottom: none;
+    }
+}

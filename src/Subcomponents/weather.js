@@ -294,7 +294,7 @@ const getDayName = (dateString) => {
                 </div>
             </section>
             <section className="forecast-card">
-                <h2>7-Day Forecast</h2>
+                <h3>7-Day Forecast</h3>
                 <div className="forecast-container">
                     {forecast.map((day, index) => {
                     const condition =
@@ -307,13 +307,22 @@ const getDayName = (dateString) => {
                     className="forecast-item"
                     key={day.date}
                     >
-                    <h3>{getDayName(day.date)}</h3>
+                    <h3 className='week-day'>{getDayName(day.date)}</h3>
                     {condition.icon}
                     <p>{condition.text}</p>
-                    <p>High: {day.maxTemp}°C</p>
-                    <p>Low: {day.minTemp}°C</p>
-                    <p>Rain: {day.rain} mm</p>
-                    <p>Wind: {day.windSpeed} km/h</p>
+                    <p>
+                        <WiThermometer size={45} /> 
+                        L: {day.minTemp}°C
+                        H: {day.maxTemp}°C
+                    </p>
+                    <p>
+                        <WiRain size={45} /> 
+                        {day.rain} mm
+                    </p>
+                    <p>
+                        <WiStrongWind size={45} /> 
+                        {day.windSpeed} km/h
+                    </p>
                   </div>
                 );
               })}
