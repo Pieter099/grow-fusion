@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeatherData } from '../Redux/weatherSlice';
 import { getCoordinates } from '../API/geocodingAPI';
-import "../Styles/weather.css"
+import "../Styles/weather.css";
+import { getSoilData } from '../API/soilAPI';
 
 import {
     WiThermometer,
@@ -136,7 +137,15 @@ const Weather = () => {
 
             }));
 
+            getSoilData(-25.7479, 28.2293).then((data) => {
+                console.log("Soil Data:", data)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+
         }
+
     }, [dispatch, status]);
 
     const [city, setCity] = useState('Pretoria');
