@@ -1,77 +1,87 @@
-footer h2,
-footer h3,
-footer p {
+.contact-footer {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-footer h2,
+.contact-footer h3,
+.contact-footer p,
+.contact-footer a {
     color: white;
 }
 
-footer h3 {
-  border: none;
+.contact-footer h3 {
+    border: none;
+    margin-top: 20px;
 }
 
-footer a {
-  color: white;
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+figure a {
+    text-decoration: none;
 }
 
 .social {
     width: 50px;
-    height: auto;
-    margin: 10px;
+    height: 50px;
+    object-fit: cover;
     border-radius: 10px;
-}
-  
-figure {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-}
-  
-figure a {
-    margin: 20px;
-}
-  
-figure a:hover {
-    cursor: pointer;
-    border-bottom: 4px solid white;
+    transition: transform 0.3s ease;
 }
 
-@media screen only and (min-width: 1024px) and (max-width: 1440px) {
-    footer h2,
-footer h3,
-footer p {
-    color: white;
+.social:hover {
+    transform: scale(1.1);
 }
 
-footer h3 {
-  border: none;
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .contact-footer {
+        padding: 35px 20px;
+    }
+
+    .social {
+        width: 45px;
+        height: 45px;
+    }
 }
 
-footer a {
-  color: white;
-}
+@media screen and (min-width: 320px) and (max-width: 500px) {
 
-.social {
-    width: 50px;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-}
-  
-figure {
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-}
-  
-figure a {
-    margin: 20px;
-}
-  
-figure a:hover {
-    cursor: pointer;
-    border-bottom: 4px solid white;
-}
-}
-  
-@media screen only and (min-width: 600px) and (max-width: 768px) {}
+    .contact-footer {
+        padding: 25px 15px;
+    }
 
-@media screen only and (min-width: 320px) and (max-width: 500px) {}
+    .contact-footer h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-footer p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    figure {
+        gap: 15px;
+    }
+
+    .social {
+        width: 40px;
+        height: 40px;
+    }
+}
