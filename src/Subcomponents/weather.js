@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeatherData } from '../Redux/weatherSlice';
 import { getCoordinates } from '../API/geocodingAPI';
 import "../Styles/weather.css";
-import { getSoilData } from '../API/soilAPI';
 
 import {
     WiThermometer,
@@ -136,13 +135,6 @@ const Weather = () => {
                 longitude: 28.2293
 
             }));
-
-            getSoilData(-25.7479, 28.2293).then((data) => {
-                console.log("Soil Data:", data)
-            })
-            .catch((error) => {
-                console.error(error)
-            })
 
         }
 
