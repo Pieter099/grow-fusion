@@ -6,7 +6,7 @@ import SignUp from "../Features/SignUp";
 
 const SignUpPage = () => {
     return (
-        <body>
+        <>
             <section className="sign-up-header">
               <Link to="/">
                 <button className="home-btn">Home</button>
@@ -16,7 +16,7 @@ const SignUpPage = () => {
             <picture className="sign-up-picture">
               <img src={signUpImg} alt="farmers" className="sign-up-img"/>
             </picture>
-            <summary>
+            <section className="summary">
               <p>
                 GrowFusion is a community dedicated to sustainable farming practices and connecting farmers with consumers.
                 By signing up, you'll gain access to a wealth of resources, expert advice, and a supportive network of 
@@ -24,11 +24,11 @@ const SignUpPage = () => {
                 to offer everyone. Join us today and be part of the movement towards a more sustainable future!
                 You will also receive the latest prices on crop values. 
               </p>
-            </summary>
+            </section>
             <section className="sign-up-form">
               <SignUp />
             </section>   
-        </body>
+        </>
     )
 }
 

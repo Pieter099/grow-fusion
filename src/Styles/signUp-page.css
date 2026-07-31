@@ -59,68 +59,7 @@ summary p {
     margin: 0;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 2560px) [
-    .sign-up-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: green;
-}
-
-.sign-up-header h2 {
-    flex-grow: 1;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    margin: 0;
-}
-
-.sign-up-picture {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    background: linear-gradient(90deg, #e5c99f, #e5c99f, #7e4614, #332421, #332421, #7e4614, #e5c99f, #e5c99f);
-}
-
-.sign-up-img {
-    width: 700px;
-    height: auto;
-    border-radius: 10px;
-    padding: 5px 50px;
-}
-
-.home-btn {
-    background-color: green;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 10px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-.home-btn:hover {
-    background-color: white;
-    color: green;
-    border: none;
-}
-
-summary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-    margin: 20px auto;
-}
-
-summary p {
-    font-size: 18px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
-    line-height: 20px;
-    margin: 0;
-}
-]
+@media only screen and (min-width: 1280px) and (max-width: 2560px) []
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
