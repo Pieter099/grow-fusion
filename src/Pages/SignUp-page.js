@@ -16,7 +16,7 @@ const SignUpPage = () => {
             <picture className="sign-up-picture">
               <img src={signUpImg} alt="farmers" className="sign-up-img"/>
             </picture>
-            <section className="summary">
+            <section className="sign-up-summary">
               <p>
                 GrowFusion is a community dedicated to sustainable farming practices and connecting farmers with consumers.
                 By signing up, you'll gain access to a wealth of resources, expert advice, and a supportive network of 
