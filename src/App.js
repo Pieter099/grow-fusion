@@ -12,13 +12,11 @@ function AppContent() {
 
   return (
     <>
-    <Router>
       {location.pathname !== "/signup" && <MainNavBar />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUpPage />} />
       </Routes>
-    </Router>
     </>
   );
 };
