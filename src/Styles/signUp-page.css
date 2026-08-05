@@ -1,3 +1,13 @@
+.sign-up-page {
+  min-height: 100vh;
+  background-image: url('../Utils/sign-up-background.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
 .sign-up-header {
     display: flex;
     align-items: center;
@@ -11,21 +21,6 @@
     justify-content: center;
     color: white;
     margin: 0;
-}
-
-.sign-up-picture {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    background: linear-gradient(90deg, #e5c99f, #e5c99f, #7e4614, #332421, #332421, #7e4614, #e5c99f, #e5c99f);
-}
-
-.sign-up-img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    border-radius: 10px;
-    padding: 5px 50px;
 }
 
 .home-btn {
@@ -44,46 +39,16 @@
     border: none;
 }
 
-.sign-up-summary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-.sign-up-summary p {
-    font-size: 18px;
-    word-spacing: 3px;
-    letter-spacing: 2px;
-    line-height: 20px;
-    margin: 0;
-}
-
-@media (max-width:1024px){
-.sign-up-img{
-    max-width:600px;
-  }
-}
+@media (max-width:1024px){}
 
 @media (max-width:500px){
   .sign-up-header {
-    flex-direction:column;
+    flex-direction:row;
     gap:15px;
   }
 
   .home-btn {
     width:100%;
-  }
-
-  .sign-up-summary {
-    width:90%;
-  }
-
-  .sign-up-summary p {
-    font-size:16px;
-    line-height:1.6;
   }
 
   form {
