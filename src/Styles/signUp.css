@@ -1,65 +1,104 @@
 form {
     max-width: 500px;
     width: 90%;
-    margin: 0 auto;
+    margin-top: 25px;
 }
 
 form h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: white;
-    background-color: green;
+    background: green;
+    padding: 10px;
+    border-radius: 8px;
+    letter-spacing: 1px;
 }
 
 form .form-group {
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 form .form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #111;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1b1b1b;
 }
 
 form .form-group input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 5px auto 10px auto;
+   padding:12px;
+  border-radius:8px;
+  font-size:16px;
+  transition:0.3s ease;
 }
 
 form .form-group input:focus {
-    border-color: #66afe9;
-    outline: none;
-    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline:none;
+    border-color:green;
+    box-shadow:0 0 8px rgba(0,128,0,.35);
 }
 
-
 form .submit-btn {
+    display: flex;
     margin: 0 auto;
     background-color: green;
     color: white;
-    padding: 10px;
-    border: 2px solid white;
+    padding: 14px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 form .submit-btn:hover {
-    background-color: darkgreen;
-    border-color: lightgray;
+    background:#046104;
+    transform:translateY(--5px);
+    border: 1px solid lightgray;
     color: lightgray;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 2560px) {}
+@media (max-width:1024px){
+    form{
+        width:95%;
+    }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+    form h2{
+        font-size:1.8rem;
+    }
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {}
+    form .submit-btn{
+        font-size:17px;
+    }
+}
+
+@media (max-width:500px){
+    form{
+        width:100%;
+        margin-top:20px;
+    }
+
+    form h2{
+        font-size:1.5rem;
+        margin-bottom:20px;
+    }
+
+    form .form-group{
+        margin-bottom:18px;
+    }
+
+    form .form-group label{
+        font-size:.95rem;
+    }
+
+    form .form-group input{
+        font-size:15px;
+        padding:10px;
+    }
+
+    form .submit-btn{
+        padding:12px;
+        font-size:16px;
+    }
+}

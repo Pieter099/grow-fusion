@@ -1,11 +1,13 @@
 .sign-up-page {
-  min-height: 100vh;
-  background-image: url('../Utils/sign-up-background.jpg');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    background-image: url("../Utils/Sign-up-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sign-up-header {
@@ -39,7 +41,50 @@
     border: none;
 }
 
-@media (max-width:1024px){}
+.sign-up-card {
+  /* background-color: rgba(221, 195, 162, 0.8); */
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 15px;
+  border: 1px solid green;
+  padding: 35px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sign-up-card h1 {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.sign-up-card p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+@media (max-width:1024px) {
+  .sign-up-header h2 {
+    font-size: 30px;
+  }
+
+  .sign-up-page {
+    padding: 50px 20px;
+  }
+
+  .sign-up-card {
+    padding: 30px;
+    max-width: 500px;
+  }
+}
 
 @media (max-width:500px){
   .sign-up-header {
@@ -51,7 +96,7 @@
     width:100%;
   }
 
-  form {
-    width:90%;
+  .sign-up-card h1 {
+    font-size: 1.6rem;
   }
 }
