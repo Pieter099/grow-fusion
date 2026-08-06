@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../Styles/navbar.css";
 
 const MainNavBar = () => {
+
+  const [ openMenu, setOpenMenu ] = useState(false);
+
   return (
     <nav className="main-navbar">
-      <ul>
+      <button className="menu-toggle" aria-label="Toggle menu" onClick={() => setOpenMenu(!openMenu)}>
+        {openMenu ? <FaTimes /> : <FaBars />}
+      </button>
+      <ul className={openMenu ? "nav-links active" : "nav-links"}>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={() => setOpenMenu(false)}>Home</a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a href="#about" onClick={() => setOpenMenu(false)}>About Us</a>
         </li>
         <li>
-          <a href="#main">Farm Info</a>
+          <a href="#main" onClick={() => setOpenMenu(false)}>Farm Info</a>
         </li>
         <li>
-          <a href="#contact">Contacts</a>
+          <a href="#contact" onClick={() => setOpenMenu(false)}>Contacts</a>
         </li>
         <li>
-          <Link to="/signup">
+          <Link to="/signup" onClick={() => setOpenMenu(false)}>
             <button>Sign Up</button>
           </Link>
         </li>
