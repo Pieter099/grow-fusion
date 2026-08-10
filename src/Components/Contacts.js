@@ -1,8 +1,7 @@
 import React from "react";
-
-import YouTube from "../Utils/YouTube.png";
-import X from "../Utils/X.jpg.avif";
-import Facebook from "../Utils/Facebook.png";
+import YouTube from "../Images/YouTube.png";
+import X from "../Images/X.jpg.avif";
+import Facebook from "../Images/Facebook.png";
 
 import "../Styles/contacts.css";
 

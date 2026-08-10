@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GrowFusion GF logo</title>
+  <desc id="desc">A stylised green and earthy gradient GF monogram with a small leaf.</desc>
+
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%" stop-color="#12a64a" />
+      <stop offset="55%" stop-color="#2f7d32" />
+      <stop offset="100%" stop-color="#7a3f18" />
+    </linearGradient>
+  </defs>
+
+  <!-- G -->
+  <path
+    d="M 282 103
+       A 133 133 0 1 0 286 365
+       L 286 319
+       L 235 319
+       L 235 270
+       L 334 270
+       L 334 365
+       C 307 399 266 419 218 419
+       C 130 419 63 352 63 264
+       C 63 176 130 109 218 109
+       C 243 109 264 114 282 123
+       Z"
+    fill="url(#logoGradient)"
+  />
+
+  <!-- F -->
+  <path
+    d="M 300 143
+       L 432 143
+       L 432 192
+       L 350 192
+       L 350 239
+       L 415 239
+       L 415 287
+       L 350 287
+       L 350 405
+       L 300 405
+       Z"
+    fill="url(#logoGradient)"
+  />
+
+  <!-- Leaf cluster -->
+  <g fill="url(#logoGradient)">
+    <path d="M 426 142 C 432 111 456 87 485 83 C 491 111 474 139 446 150 Z" />
+    <path d="M 444 151 C 458 130 482 126 504 136 C 493 157 470 164 444 157 Z" />
+    <path d="M 431 151 C 410 140 401 120 406 100 C 427 106 440 124 440 148 Z" />
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 import React from "react";
-import headImage from "../Utils/headImage.webp";
+import headImage from "../Images/headImage.webp";
 import "../Styles/home.css";
 
 const Home = () => {

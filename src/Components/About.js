@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Utils/Logo.jpg"
+import Logo from "../Assets/Logo.jpg"
 import "../Styles/about.css";
 
 const AboutInfo = () => {

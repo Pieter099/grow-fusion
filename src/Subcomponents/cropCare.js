@@ -1,6 +1,4 @@
 import React from "react";
-import fertilizer from "../Utils/fertilizer.jpg";
-import herbicide from "../Utils/herbicide.jpg";
 
 const CropCare = () => {
     return (
@@ -10,7 +8,7 @@ const CropCare = () => {
         <p className="intro">Fertilizers and herbicides are crucial components of modern agriculture, playing a significant role in crop production and management. Here’s an overview of each:</p>
         <ul className="info-list">
           <li>
-            <img src={fertilizer} alt="Fertilizer" />
+            {/* <img src={fertilizer} alt="Fertilizer" /> */}
             <p>
               <strong>Fertilizer</strong>
               1.	Purpose: Fertilizers replenish essential nutrients in the soil, promoting healthy plant growth and enhancing crop yields.
@@ -27,7 +25,7 @@ const CropCare = () => {
             </p>
           </li>
           <li>
-            <img src={herbicide} alt="Herbicide" />
+            {/* <img src={herbicide} alt="Herbicide" /> */}
             <p>
               <strong>Herbicide</strong>
               1.	Purpose: Herbicides are chemical agents designed to control or eliminate unwanted vegetation, such as weeds, that compete with crops for nutrients, water, and sunlight.  ￼
