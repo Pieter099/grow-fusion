@@ -22,9 +22,10 @@
   margin:auto;
 }
 
-.logo-box img{
-  width:100%;
-  max-width:350px;
+.logo-box .logo-img {
+  width: 60px;
+  height: auto;
+  display: block;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
 }
