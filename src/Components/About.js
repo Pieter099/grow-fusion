@@ -1,5 +1,5 @@
 import React from "react";
-import growFusionLogo from "../Assets/growFusionLogo.svg"
+import GrowFusion_Logo from "../Images/GrowFusion_Logo.png";
 import "../Styles/about.css";
 
 const AboutInfo = () => {
@@ -8,7 +8,7 @@ const AboutInfo = () => {
       <h2 className="about-heading">About Grow Fusion</h2>
       <section className="logo-and-summary">
         <picture className="logo-box">
-          <img src={growFusionLogo} alt="site-logo" className="logo-img"/>
+          <img src={GrowFusion_Logo} alt="site-logo" className="logo-img"/>
         </picture>
         <div className="about-summary">
           <p>
