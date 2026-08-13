@@ -1,5 +1,5 @@
 import React from "react";
-import GrowFusion_Logo from "../Images/GrowFusion_Logo.png";
+import GrowFusion_Logo from "../Assets/GrowFusion_Logo.svg";
 import "../Styles/about.css";
 
 const AboutInfo = () => {
