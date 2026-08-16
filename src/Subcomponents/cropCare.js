@@ -11,38 +11,20 @@ const CropCare = () => {
             {/* <img src={fertilizer} alt="Fertilizer" /> */}
             <p>
               <strong>Fertilizer</strong>
-              1.	Purpose: Fertilizers replenish essential nutrients in the soil, promoting healthy plant growth and enhancing crop yields.
-	            2.	Types of Fertilizers:
-	              •	Organic: Derived from natural sources like compost and manure, they improve soil structure and fertility.
-	              •	Inorganic (Mineral): Manufactured chemically, providing precise nutrient concentrations for targeted plant needs. ￼
-	            3.	Essential Nutrients:
-	              •	Macronutrients: Required in large amounts; include nitrogen (N), phosphorus (P), and potassium (K).
-	              •	Micronutrients: Needed in smaller quantities; include elements like iron, zinc, and copper.
-	            4.	Application Methods:
-	              •	Soil Application: Direct incorporation into the soil near plant roots.
-	              •	Foliar Application: Spraying nutrient solutions directly onto plant leaves for quick absorption.
-	            5.	Environmental Considerations: Proper use of fertilizers is crucial to prevent issues like water pollution and soil degradation. Responsible application ensures sustainable agriculture and environmental protection.
+
+              Fertilizers supply essential nutrients that crops need for healthy growth and good yields. They can be **organic**, such as compost and manure, or **inorganic/mineral**, which provide specific nutrient concentrations.
+
+              The main nutrients are **nitrogen (N), phosphorus (P), and potassium (K)**, along with smaller amounts of micronutrients such as iron, zinc, and copper. Fertilizers can be applied directly to the soil or to plant leaves. Proper application is important to avoid nutrient loss, water pollution, and soil degradation.
             </p>
           </li>
           <li>
             {/* <img src={herbicide} alt="Herbicide" /> */}
             <p>
               <strong>Herbicide</strong>
-              1.	Purpose: Herbicides are chemical agents designed to control or eliminate unwanted vegetation, such as weeds, that compete with crops for nutrients, water, and sunlight.  ￼
-	            2.	Types of Herbicides:
-	              •	Selective Herbicides: Target specific plant species while leaving desired crops unharmed. For example, certain herbicides control broadleaf weeds in cereal crops without affecting the cereals.  ￼
-	              •	Non-Selective Herbicides: Affect a wide range of plant species and are typically used to clear land of all vegetation. Glyphosate is a widely known non-selective herbicide.
-	            3.	Application Methods:
-	              •	Pre-Planting: Applied before crops are planted to eliminate existing weeds. ￼
-	              •	Pre-Emergence: Applied after planting but before crop seedlings emerge, targeting germinating weed seeds. ￼
-	              •	Post-Emergence: Applied after both crops and weeds have emerged, focusing on actively growing weeds.  ￼
-	            4.	Modes of Action:
-	              •	Contact Herbicides: Kill only the plant parts they come into direct contact with, requiring thorough coverage for effectiveness. ￼
-	              •	Systemic Herbicides: Absorbed by foliage or roots and translocated throughout the plant, affecting growth processes. Glyphosate, for instance, inhibits an enzyme involved in amino acid synthesis.  ￼
-	            5.	Environmental and Health Considerations:
-	              •	Persistence: Some herbicides degrade quickly in the environment, while others persist longer, potentially affecting non-target organisms.
-	              •	Resistance: Over-reliance on specific herbicides can lead to the development of resistant weed species, complicating management strategies. For example, glyphosate-resistant Italian ryegrass has been identified in the UK.  ￼
-	              •	Health Impacts: Certain herbicides have been scrutinized for potential health risks. For instance, paraquat has been under review due to possible links to Parkinson’s disease.  ￼
+
+              Herbicides are used to control unwanted plants and weeds that compete with crops for nutrients, water, and sunlight. **Selective herbicides** target specific weeds, while **non-selective herbicides** affect a wider range of vegetation.
+
+              They may be applied before planting, before crops emerge, or after crops and weeds have emerged. Herbicides can work through contact with plant tissue or by being absorbed and moved throughout the plant. Responsible use is important because overuse can contribute to weed resistance, environmental harm, and potential health risks.
             </p>
           </li>
         </ul>
