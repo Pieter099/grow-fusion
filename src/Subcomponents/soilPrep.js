@@ -1,14 +1,14 @@
 import React from "react";
-import thumbNail from "../Images/thumbNail.jpg.jpg";
-import soilStep1 from "../Images/soilStep1.jpg";
-import soilStep2 from "../Images/soilStep2.jpg";
-import soilStep3 from "../Images/soilStep3.jpg";
-import soilStep4 from "../Images/soilStep4.jpg";
-import soilStep5 from "../Images/soilStep5.jpg";
-import soilStep6 from "../Images/soilStep6.jpg";
-import soilStep7 from "../Images/soilStep7.jpg";
-import soilStep8 from "../Images/soilStep8.jpg";
-import soilStep9 from "../Images/soilStep9.jpg";
+import thumbNail from "../Images/thumbNail.webp";
+import soilStep1 from "../Images/soilStep1.webp";
+import soilStep2 from "../Images/soilStep2.webp";
+import soilStep3 from "../Images/soilStep3.webp";
+import soilStep4 from "../Images/soilStep4.webp";
+import soilStep5 from "../Images/soilStep5.webp";
+import soilStep6 from "../Images/soilStep6.webp";
+import soilStep7 from "../Images/soilStep7.webp";
+import soilStep8 from "../Images/soilStep8.webp";
+import soilStep9 from "../Images/soilStep9.webp";
 
 const SoilPrep = () => {
   return (

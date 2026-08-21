@@ -1,8 +1,7 @@
 import React from "react";
-import YouTube from "../Images/YouTube.png";
-import X from "../Images/X.jpg.avif";
-import Facebook from "../Images/Facebook.png";
-
+import YouTube from "../Images/YouTube.webp";
+import X from "../Images/X.webp";
+import Facebook from "../Images/Facebook.webp";
 import "../Styles/contacts.css";
 
 const Contacts = () => {

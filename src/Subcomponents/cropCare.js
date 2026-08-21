@@ -1,20 +1,20 @@
 import React from "react";
-import Fertilizer from "../Images/Fertilizer.png";
-import Herbicide from "../Images/Herbicide.png";
-import fertStep1 from "../Images/fertStep1.jpg";
-import fertStep2 from "../Images/fertStep2.jpg";
-import fertStep3 from "../Images/fertStep3.jpg";
-import fertStep4 from "../Images/fertStep4.jpg";
-import fertStep5 from "../Images/fertStep5.jpg";
-import fertStep6 from "../Images/fertStep6.jpg";
-import fertStep7 from "../Images/fertStep7.jpg";
-import herbStep1 from "../Images/herbStep1.jpg";
-import herbStep2 from "../Images/herbStep2.jpg";
-import herbStep3 from "../Images/herbStep3.jpg";
-import herbStep4 from "../Images/herbStep4.jpg";
-import herbStep5 from "../Images/herbStep5.jpg";
-import herbStep6 from "../Images/herbStep6.jpg";
-import herbStep7 from "../Images/herbStep7.jpg";
+import Fertilizer from "../Images/Fertilizer.webp";
+import Herbicide from "../Images/Herbicide.webp";
+import fertStep1 from "../Images/fertStep1.webp";
+import fertStep2 from "../Images/fertStep2.webp";
+import fertStep3 from "../Images/fertStep3.webp";
+import fertStep4 from "../Images/fertStep4.webp";
+import fertStep5 from "../Images/fertStep5.webp";
+import fertStep6 from "../Images/fertStep6.webp";
+import fertStep7 from "../Images/fertStep7.webp";
+import herbStep1 from "../Images/herbStep1.webp";
+import herbStep2 from "../Images/herbStep2.webp";
+import herbStep3 from "../Images/herbStep3.webp";
+import herbStep4 from "../Images/herbStep4.webp";
+import herbStep5 from "../Images/herbStep5.webp";
+import herbStep6 from "../Images/herbStep6.webp";
+import herbStep7 from "../Images/herbStep7.webp";
 
 const CropCare = () => {
     return (
