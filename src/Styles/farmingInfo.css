@@ -206,7 +206,7 @@
    Responsive layout
 ========================== */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .info-section {
     padding: var(--spacing-md) var(--spacing-sm);
   }
