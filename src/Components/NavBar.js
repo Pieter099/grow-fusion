@@ -9,10 +9,19 @@ const MainNavBar = () => {
 
   return (
     <nav className="main-navbar">
-      <button className="menu-toggle" aria-label="Toggle menu" onClick={() => setOpenMenu(!openMenu)}>
+      <button 
+        className="menu-toggle" 
+        aria-label={openMenu ? "Close menu" : "Open menu"}
+        aria-expanded={openMenu}
+        aria-controls="main-navigation"
+        onClick={() => setOpenMenu(!openMenu)}
+      >
         {openMenu ? <FaTimes /> : <FaBars />}
       </button>
-      <ul className={openMenu ? "nav-links active" : "nav-links"}>
+      <ul
+        id="main-navigation" 
+        className={openMenu ? "nav-links active" : "nav-links"}
+      >
         <li>
           <a href="#home" onClick={() => setOpenMenu(false)}>Home</a>
         </li>
@@ -26,8 +35,12 @@ const MainNavBar = () => {
           <a href="#contact" onClick={() => setOpenMenu(false)}>Contacts</a>
         </li>
         <li>
-          <Link to="/signup" onClick={() => setOpenMenu(false)}>
-            <button>Sign Up</button>
+          <Link 
+            to="/signup" 
+            className="signup-btn"
+            onClick={() => setOpenMenu(false)}
+          >
+            Sign Up
           </Link>
         </li>
       </ul>
