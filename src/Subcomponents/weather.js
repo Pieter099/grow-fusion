@@ -173,7 +173,13 @@ const Weather = () => {
 }));
 
 const getDayName = (dateString) => {
-    return new Date(dateString).toLocaleDateString("en-US", {
+    const [year, month, day] = dateString.split("-");
+
+    return new Date(
+        Number(year),
+        Number(month) - 1,
+        Number(day)
+    ).toLocaleDateString("en-US", {
         weekday: "short"
     });
 };
@@ -215,7 +221,15 @@ const getDayName = (dateString) => {
     // search function
     // ====================
 
-    const handleSearch = async () => {
+    const handleSearch = async (event) => {
+        event.preventDefault();
+
+        const searchTerm = city.trim();
+
+        if (!searchTerm) {
+            return;
+        };
+        
         try {
             const location = await getCoordinates(city);
 
@@ -236,8 +250,12 @@ const getDayName = (dateString) => {
     return (
         <>
             <section className='search'>
-                <div className="weather-search">
+                <form className="weather-search" onSubmit={handleSearch}>
+                  <label htmlFor="city-search" className="sr-only">
+                    Search for a city:
+                </label>
                   <input
+                    id="city-search"
                     type="text"
                     placeholder="Search any city..."
                     value={city}
@@ -246,7 +264,7 @@ const getDayName = (dateString) => {
                   <button onClick={handleSearch}>
                     Search
                   </button>
-                </div>
+                </form>
             </section>
             <div className='location-name'>
                 <h2>
@@ -254,50 +272,50 @@ const getDayName = (dateString) => {
                 </h2>
                 <p>{currentDate}</p>
             </div>
-            <section className="weather-card">
-                <div className="weather-item">
+            <section className="weather-card" aria-label='current weather'>
+                <article className="weather-item">
                     {currentWeatherCondition.icon}
                     <h4>Conditions</h4>
                     <p>{currentWeatherCondition.text}</p>
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiThermometer size={55} />
                     <h4>Temperature</h4>
                     <p>{current.temperature_2m}°C</p>
                     <h4>Feels Like</h4>
                     <p>{current.apparent_temperature}°C</p>
                     {temperatureIcon}
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiHumidity size={55} />
                     <h4>Humidity</h4>
                     <p>{current.relative_humidity_2m}%</p>
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiRain size={55} />
                     <h4>Rain</h4>
                     <p>{current.rain} mm</p>
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiRain size={55} />
                     <h4>Precipitation</h4>
                     <p>{current.precipitation} mm</p>
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiStrongWind size={55} />
                     <h4>Wind Speed</h4>
                     <p>{current.wind_speed_10m} km/h</p>
-                </div>
-                <div className="weather-item">
+                </article>
+                <article className="weather-item">
                     <WiBarometer size={55} />
                     <h4>Pressure</h4>
                     <p>{current.surface_pressure} hPa</p>
-                </div>
+                </article>
             </section>
-            <section className="forecast-card">
+            <section className="forecast-card" aria-labelledby="forecast-heading">
                 <h3>7-Day Forecast</h3>
-                <div className="forecast-container">
-                    {forecast.map((day, index) => {
+                <article className="forecast-container">
+                    {forecast.map((day) => {
                     const condition =
                     weatherConditions[day.weatherCode] || {
                     text: "Unknown",
@@ -327,7 +345,7 @@ const getDayName = (dateString) => {
                   </div>
                 );
               })}
-            </div>
+            </article>
           </section>
         </>
     );

@@ -51,6 +51,17 @@
     margin-bottom:40px;
 }
 
+.weather-search .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+}
+
 .weather-search input{
     width:300px;
     padding:12px 18px;
