@@ -4,6 +4,10 @@ const BASE_URL = "https://api.open-meteo.com/v1/forecast";
 
 export const getWeatherData = async (latitude, longitude) => {
 
+    if (!Number(latitude) || !Number(longitude)) {
+        throw new Error("Invalid latitude or longitude");
+    }
+
     // Current weather variables we want from Open-Meteo
     const currentWeather = [
         "temperature_2m",
@@ -37,8 +41,7 @@ export const getWeatherData = async (latitude, longitude) => {
 
 if (!response.ok) {
     const errorText = await response.text();
-    console.log(errorText);
-    throw new Error(errorText);
+    throw new Error(errorText || `Weather API request failed with status ${response.status}`);
 }
 
     return response.json();
