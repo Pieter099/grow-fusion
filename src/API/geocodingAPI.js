@@ -1,10 +1,22 @@
 const GEO_URL = "https://geocoding-api.open-meteo.com/v1/search";
 
 export const getCoordinates = async (city) => {
-    const response = await fetch(`${GEO_URL}?name=${encodeURIComponent(city)}&count=1`);
+    if (typeof city !== "string" || !city.trim()) {
+        throw new Error("Enter a valid city name");
+    }
+
+    const searchCity = city.trim();
+
+    const response = await fetch(
+        `${GEO_URL}?name=${encodeURIComponent(searchCity)}&count=1`
+    );
 
      if (!response.ok) {
-        throw new Error("Failed to fetch coordinates");
+        const errorText = await response.text();
+
+        throw new Error(
+            errorText || `Geocoding API request failed with status ${response.status}`
+        );
     }
 
     const data = await response.json();
