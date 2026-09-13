@@ -10,6 +10,7 @@
   padding: .8rem 2rem;
   border-radius: var(--radius);
   margin-bottom: 3rem;
+  line-height: 1.2;
 }
 
 .logo-and-summary {
