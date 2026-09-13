@@ -5,7 +5,13 @@ import "../Styles/home.css";
 const Home = () => {
   return (
       <section className="head" id="home">
-        <img src={headImage} alt="farming" className="mainImg" />
+        <img 
+          src={headImage} 
+          alt="farming" 
+          className="mainImg" 
+          width="100%"
+          height="auto"
+        />
         <div className="mainText">
           <h1 className="mainHeading">GrowFusion</h1>
           <p className="mainSubHeading">

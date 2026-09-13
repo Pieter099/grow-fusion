@@ -11,8 +11,6 @@
 }
 
 .mainImg {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -33,7 +31,7 @@
 
 .mainHeading {  
   font-size: clamp(2.5rem, 7vw, 5rem);
-  color: beige;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 1rem;
   text-shadow: 3px 3px 10px rgba(0,0,0,.6);
 }
@@ -42,7 +40,7 @@
   max-width: 700px;
   padding: 1rem 2rem;
   font-size: clamp(1.1rem, 3vw, 2rem);
-  color: beige;
+  color: rgba(255, 255, 255, 0.8);
   border: 2px solid beige;
   border-radius: var(--radius);
   background: rgba(0,0,0,.20);
@@ -65,7 +63,7 @@ max-width:600px;
    Mobile
 ========================== */
 
-@media (max-width:768px){
+@media (max-width:820px){
 .mainText{
 padding:1rem;
 }
@@ -74,5 +72,4 @@ padding:1rem;
 max-width:90%;
 padding:1rem;
 }
-
 }
