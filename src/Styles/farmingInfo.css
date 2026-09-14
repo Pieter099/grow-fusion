@@ -80,9 +80,6 @@
   align-items: center;
   padding: var(--spacing-md) 0;
   border-block: 2px solid var(--primary-green);
-}
-
-.info-list > li {
   transition: 
     transform 0.25s ease, 
     box-shadow 0.25s ease, 

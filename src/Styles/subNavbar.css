@@ -30,12 +30,12 @@
   font-weight: 600;
   border-radius: 8px;
   transition:
-    background .25s,
-    transform .25s;
+    background-color .25s ease,
+    transform .25s ease;
 }
 
 .sub-navbar a:hover {
-  background: rgba(255,255,255,.15);
+  background-color: rgba(255,255,255,.15);
   transform: translateY(-2px);
 }
 
