@@ -8,7 +8,7 @@ const AboutInfo = () => {
       <h2 className="about-heading">About Grow Fusion</h2>
       <section className="logo-and-summary">
         <picture className="logo-box">
-          <img src={GrowFusion_Logo} alt="site-logo" className="logo-img"/>
+          <img src={GrowFusion_Logo} alt="site-logo" className="logo-img" loading="lazy" />
         </picture>
         <div className="about-summary">
           <p>

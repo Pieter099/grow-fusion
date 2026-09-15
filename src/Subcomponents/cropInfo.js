@@ -14,7 +14,7 @@ const CropInfo = () => {
             <p className="intro">Here is an overview of each crop type, highlighting key factual properties and points that you might consider:</p>
             <ul className="info-list">
                <li>
-                <img src={barley} alt="Barley" />
+                <img src={barley} alt="Barley" loading="lazy" />
                 <p>
                 <strong>Barley</strong>
                 •	Growth & Adaptability: Barley is a hardy cereal crop that grows well in cooler climates and is tolerant of less-than-ideal soil conditions, making it a good choice for marginal lands.
@@ -23,7 +23,7 @@ const CropInfo = () => {
                 </p>
               </li>
           <li>
-            <img src={canola} alt="Canola" />
+            <img src={canola} alt="Canola" loading="lazy" />
             <p>
               <strong>Canola</strong>
               •	Growth & Climate: Canola is an oilseed crop that is best grown in temperate climates with well-drained soils. It’s often cultivated in regions with cooler growing seasons.
@@ -32,7 +32,7 @@ const CropInfo = () => {
             </p>
           </li>
           <li>
-            <img src={corn} alt="Corn" />
+            <img src={corn} alt="Corn" loading="lazy" />
             <p>
               <strong>Corn</strong>
               •	Growth & Climate: Corn is a warm-season annual that requires a long frost-free period and well-drained, fertile soils. It is typically grown in temperate to subtropical regions.
@@ -41,7 +41,7 @@ const CropInfo = () => {
             </p>
           </li>
           <li>
-            <img src={cotton} alt="Cotton" />
+            <img src={cotton} alt="Cotton" loading="lazy" />
             <p>
               <strong>Cotton</strong>
               •	Growth & Climate: Cotton is a warm-season perennial (grown as an annual) that requires a long frost-free period, abundant sunshine, and well-drained, fertile soils.
@@ -50,7 +50,7 @@ const CropInfo = () => {
             </p>
           </li>
           <li>
-            <img src={oats} alt="Oats" />
+            <img src={oats} alt="Oats" loading="lazy" />
             <p>
               <strong>Oats</strong>
               •	Growth & Climate: Oats thrive in cooler, moist climates and are often grown in regions where other grains might struggle. They prefer well-drained soils.
@@ -59,7 +59,7 @@ const CropInfo = () => {
             </p>
           </li>
           <li>
-            <img src={wheat} alt="Wheat" />
+            <img src={wheat} alt="Wheat" loading="lazy" />
             <p>
               <strong>Wheat</strong>
               •	Varieties & Climate: Wheat comes in different types (e.g., winter and spring wheat) that are adapted to various climates. Winter wheat is usually planted in the fall and harvested in the summer, while spring wheat is planted in the spring.

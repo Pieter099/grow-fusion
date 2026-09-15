@@ -31,15 +31,15 @@ const Contacts = () => {
 
     <figure>
       <a href="/">
-        <img src={YouTube} alt="YouTube" className="social" />
+        <img src={YouTube} alt="YouTube" className="social" loading="lazy" />
       </a>
 
       <a href="/">
-        <img src={X} alt="X" className="social" />
+        <img src={X} alt="X" className="social" loading="lazy" />
       </a>
 
       <a href="/">
-        <img src={Facebook} alt="Facebook" className="social" />
+        <img src={Facebook} alt="Facebook" className="social" loading="lazy" />
       </a>
     </figure>
   </div>
