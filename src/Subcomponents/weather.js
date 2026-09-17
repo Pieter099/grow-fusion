@@ -4,24 +4,22 @@ import { fetchWeatherData } from '../Redux/weatherSlice';
 import { getCoordinates } from '../API/geocodingAPI';
 import "../Styles/weather.css";
 
-import {
-    WiThermometer,
-    WiHumidity,
-    WiStrongWind,
-    WiBarometer,
-    WiCloudy,
-    WiRain,
-    WiSnowflakeCold,
-    WiThunderstorm,
-    WiFog,
-    WiCloud,
-    WiSnow,
-    WiShowers,
-    WiStormShowers,
-    WiDaySunny,
-    WiHot,
-    WiHail
-} from 'react-icons/wi';
+import { WiThermometer } from "@react-icons/all-files/wi/WiThermometer";
+import { WiHumidity } from "@react-icons/all-files/wi/WiHumidity";
+import { WiStrongWind } from "@react-icons/all-files/wi/WiStrongWind";
+import { WiBarometer } from "@react-icons/all-files/wi/WiBarometer";
+import { WiCloudy } from "@react-icons/all-files/wi/WiCloudy";
+import { WiRain } from "@react-icons/all-files/wi/WiRain";
+import { WiSnowflakeCold } from "@react-icons/all-files/wi/WiSnowflakeCold";
+import { WiThunderstorm } from "@react-icons/all-files/wi/WiThunderstorm";
+import { WiFog } from "@react-icons/all-files/wi/WiFog";
+import { WiCloud } from "@react-icons/all-files/wi/WiCloud";
+import { WiSnow } from "@react-icons/all-files/wi/WiSnow";
+import { WiShowers } from "@react-icons/all-files/wi/WiShowers";
+import { WiStormShowers } from "@react-icons/all-files/wi/WiStormShowers";
+import { WiDaySunny } from "@react-icons/all-files/wi/WiDaySunny";
+import { WiHot } from "@react-icons/all-files/wi/WiHot";
+import { WiHail } from "@react-icons/all-files/wi/WiHail";
 
 // ---------------------------------------
 // Weather Code Descriptions + Icons
