@@ -130,15 +130,19 @@
    Crop prices and calendar
 ========================== */
 
-.cropPrices {
-  min-height: 6rem;
-}
-
 .cropSeason {
   margin-inline: calc(var(--spacing-md) * -1);
   padding-inline: var(--spacing-md);
   color: var(--text-primary);
   background: #d4b48a;
+}
+
+.cropSeason .intro {
+    color: var(--text-primary);
+}
+
+.cropSeason h3 {
+    color: #1b5e20;
 }
 
 /* ==========================
