@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-.intro {
+.cropProperties .intro {
   color:var(--text-secondary);
 }
 
@@ -127,7 +127,7 @@
 }
 
 /* ==========================
-   Crop prices and calendar
+   Crop seasons and calendar
 ========================== */
 
 .cropSeason {
@@ -158,6 +158,11 @@
 .soilPrep h3,
 .crop-care h3,
 .crop-care-steps h3 {
+  color: var(--surface);
+}
+
+.soilPrep .intro,
+.crop-care .intro {
   color: var(--surface);
 }
 
