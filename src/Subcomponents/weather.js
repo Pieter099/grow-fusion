@@ -26,7 +26,6 @@ import { WiHail } from "@react-icons/all-files/wi/WiHail";
 // ---------------------------------------
 
 const weatherConditions = {
-
     0: {
         text: "Clear Sky",
         icon: <WiDaySunny size={55} />
@@ -111,12 +110,9 @@ const weatherConditions = {
         text: "Heavy Hail",
         icon: <WiHail size={55} />
     }
-
 };
 
-
 const Weather = () => {
-
     const dispatch = useDispatch();
 
     const { weather, status, error } = useSelector(
@@ -124,33 +120,92 @@ const Weather = () => {
     );
 
     useEffect(() => {
-
         if (status === "idle") {
-
             dispatch(fetchWeatherData({
-
                 latitude: -25.7479,
                 longitude: 28.2293
-
             }));
-
         }
-
     }, [dispatch, status]);
 
-    const [city, setCity] = useState('Pretoria');
+    const [city, setCity] = useState("Pretoria");
 
     const [location, setLocation] = useState({
-            city: "Pretoria",
-            country: "South Africa"
-        });
+        city: "Pretoria",
+        country: "South Africa"
+    });
+
+    const [coordinates, setCoordinates] = useState({
+        latitude: -25.7479,
+        longitude: 28.2293
+    });
+
+    // ---------------------------------------
+    // Search Function
+    // ---------------------------------------
+
+    const handleSearch = async (event) => {
+        event.preventDefault();
+
+        const searchTerm = city.trim();
+
+        if (!searchTerm) {
+            return;
+        }
+
+        try {
+            const location = await getCoordinates(searchTerm);
+
+            setLocation({
+                city: location.name,
+                country: location.country
+            });
+
+            const weatherCoordinates = {
+                latitude: location.latitude,
+                longitude: location.longitude
+            };
+
+            setCoordinates(weatherCoordinates);
+
+            dispatch(fetchWeatherData(weatherCoordinates));
+
+        } catch (error) {
+            alert(error.message);
+        }
+    };
+
+    // ---------------------------------------
+    // Retry Function
+    // ---------------------------------------
+
+    const handleRetry = () => {
+        dispatch(fetchWeatherData(coordinates));
+    };
+
+    // ---------------------------------------
+    // Loading / Error States
+    // ---------------------------------------
 
     if (status === "loading") {
         return <div>Loading...</div>;
     }
 
     if (status === "failed") {
-        return <div>Error: {error}</div>;
+        return (
+            <div className="weather-error" role="alert">
+                <p>Unable to fetch weather data!</p>
+                <p>Error: {error}</p>
+
+                <button
+                    type="button"
+                    className="retry-btn"
+                    onClick={handleRetry}
+                >
+                    Retry
+                </button>
+            </div>
+        );
     }
 
     if (!weather.current || !weather.daily) {
@@ -158,29 +213,28 @@ const Weather = () => {
     }
 
     const current = weather.current;
-
     const daily = weather.daily;
 
     const forecast = daily.time.map((date, index) => ({
-    date,
-    weatherCode: daily.weather_code[index],
-    maxTemp: daily.temperature_2m_max[index],
-    minTemp: daily.temperature_2m_min[index],
-    rain: daily.rain_sum[index],
-    windSpeed: daily.wind_speed_10m_max[index]
-}));
+        date,
+        weatherCode: daily.weather_code[index],
+        maxTemp: daily.temperature_2m_max[index],
+        minTemp: daily.temperature_2m_min[index],
+        rain: daily.rain_sum[index],
+        windSpeed: daily.wind_speed_10m_max[index]
+    }));
 
-const getDayName = (dateString) => {
-    const [year, month, day] = dateString.split("-");
+    const getDayName = (dateString) => {
+        const [year, month, day] = dateString.split("-");
 
-    return new Date(
-        Number(year),
-        Number(month) - 1,
-        Number(day)
-    ).toLocaleDateString("en-US", {
-        weekday: "short"
-    });
-};
+        return new Date(
+            Number(year),
+            Number(month) - 1,
+            Number(day)
+        ).toLocaleDateString("en-US", {
+            weekday: "short"
+        });
+    };
 
     const today = new Date();
 
@@ -199,9 +253,7 @@ const getDayName = (dateString) => {
 
     if (current.temperature_2m < 0) {
         temperatureIcon = <WiSnowflakeCold size={55} />;
-    }
-
-    else if (current.temperature_2m > 40) {
+    } else if (current.temperature_2m > 40) {
         temperatureIcon = <WiHot size={55} />;
     }
 
@@ -215,136 +267,141 @@ const getDayName = (dateString) => {
             icon: <WiCloud size={55} />
         };
 
-    //.====================
-    // search function
-    // ====================
-
-    const handleSearch = async (event) => {
-        event.preventDefault();
-
-        const searchTerm = city.trim();
-
-        if (!searchTerm) {
-            return;
-        };
-        
-        try {
-            const location = await getCoordinates(city);
-
-            setLocation({
-                city: location.name,
-                country: location.country
-            });
-
-            dispatch(fetchWeatherData({
-                latitude: location.latitude,
-                longitude: location.longitude
-            }));
-        } catch (error) {
-            alert(error.message);
-        }
-    };
-
     return (
         <>
-            <section className='search'>
-                <form className="weather-search" onSubmit={handleSearch}>
-                  <label htmlFor="city-search" className="sr-only">
-                    Search for a city:
-                </label>
-                  <input
-                    id="city-search"
-                    type="text"
-                    placeholder="Search any city..."
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                  />
-                  <button onClick={handleSearch}>
-                    Search
-                  </button>
+            <section className="search">
+                <form
+                    className="weather-search"
+                    onSubmit={handleSearch}
+                >
+                    <label
+                        htmlFor="city-search"
+                        className="sr-only"
+                    >
+                        Search for a city:
+                    </label>
+
+                    <input
+                        id="city-search"
+                        type="text"
+                        placeholder="Search any city..."
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    />
+
+                    <button type="submit">
+                        Search
+                    </button>
                 </form>
             </section>
-            <div className='location-name'>
+
+            <div className="location-name">
                 <h2>
                     {location.city}, {location.country}
                 </h2>
+
                 <p>{currentDate}</p>
             </div>
-            <section className="weather-card" aria-label='current weather'>
+
+            <section
+                className="weather-card"
+                aria-label="Current weather"
+            >
                 <article className="weather-item">
                     {currentWeatherCondition.icon}
                     <h4>Conditions</h4>
                     <p>{currentWeatherCondition.text}</p>
                 </article>
+
                 <article className="weather-item">
                     <WiThermometer size={55} />
                     <h4>Temperature</h4>
                     <p>{current.temperature_2m}°C</p>
+
                     <h4>Feels Like</h4>
                     <p>{current.apparent_temperature}°C</p>
+
                     {temperatureIcon}
                 </article>
+
                 <article className="weather-item">
                     <WiHumidity size={55} />
                     <h4>Humidity</h4>
                     <p>{current.relative_humidity_2m}%</p>
                 </article>
+
                 <article className="weather-item">
                     <WiRain size={55} />
                     <h4>Rain</h4>
                     <p>{current.rain} mm</p>
                 </article>
+
                 <article className="weather-item">
                     <WiRain size={55} />
                     <h4>Precipitation</h4>
                     <p>{current.precipitation} mm</p>
                 </article>
+
                 <article className="weather-item">
                     <WiStrongWind size={55} />
                     <h4>Wind Speed</h4>
                     <p>{current.wind_speed_10m} km/h</p>
                 </article>
+
                 <article className="weather-item">
                     <WiBarometer size={55} />
                     <h4>Pressure</h4>
                     <p>{current.surface_pressure} hPa</p>
                 </article>
             </section>
-            <section className="forecast-card" aria-labelledby="forecast-heading">
-                <h3>7-Day Forecast</h3>
+
+            <section
+                className="forecast-card"
+                aria-labelledby="forecast-heading"
+            >
+                <h3 id="forecast-heading">7-Day Forecast</h3>
+
                 <article className="forecast-container">
                     {forecast.map((day) => {
-                    const condition =
-                    weatherConditions[day.weatherCode] || {
-                    text: "Unknown",
-                    icon: <WiCloud size={40}/>
-                    };
-                    return (
-                    <div
-                    className="forecast-item"
-                    key={day.date}
-                    >
-                    <h3 className='week-day'>{getDayName(day.date)}</h3>
-                    {condition.icon}
-                    <p>{condition.text}</p>
-                    <p>
-                        <WiThermometer size={45} /> 
-                        L: {day.minTemp}°C
-                        H: {day.maxTemp}°C
-                    </p>
-                    <p>
-                        <WiRain size={45} /> 
-                        {day.rain} mm
-                    </p>
-                    <p>
-                        <WiStrongWind size={45} /> 
-                        {day.windSpeed} km/h
-                    </p>
-                  </div>
-                );
-              })}
-            </article>
-          </section>
+                        const condition =
+                            weatherConditions[day.weatherCode] || {
+                                text: "Unknown",
+                                icon: <WiCloud size={40} />
+                            };
+
+                        return (
+                            <div
+                                className="forecast-item"
+                                key={day.date}
+                            >
+                                <h3 className="week-day">
+                                    {getDayName(day.date)}
+                                </h3>
+
+                                {condition.icon}
+
+                                <p>{condition.text}</p>
+
+                                <p>
+                                    <WiThermometer size={45} />
+                                    L: {day.minTemp}°C
+                                    H: {day.maxTemp}°C
+                                </p>
+
+                                <p>
+                                    <WiRain size={45} />
+                                    {day.rain} mm
+                                </p>
+
+                                <p>
+                                    <WiStrongWind size={45} />
+                                    {day.windSpeed} km/h
+                                </p>
+                            </div>
+                        );
+                    })}
+                </article>
+            </section>
         </>
     );
 };

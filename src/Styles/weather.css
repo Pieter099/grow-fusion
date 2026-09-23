@@ -93,6 +93,37 @@
     background:#236027;
 }
 
+.weather-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.weather-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weather-btn:hover {
+    background-color: #236027;
+    transform: translateY(-2px);
+}
+
+.retry-btn:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: 2px;
+}
+
 .location-name {
     text-align:center;
     margin-bottom:30px;
