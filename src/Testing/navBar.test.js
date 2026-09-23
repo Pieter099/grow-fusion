@@ -1,0 +1,90 @@
+import React from 'react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import MainNavBar from '../components/NavBar';
+
+describe('MainNavBar', () => {
+  test('renders navigation links', () => {
+    render(
+      <MemoryRouter>
+        <MainNavBar />
+      </MemoryRouter>
+    );
+
+    expect(screen.getByRole('link', { name: "Home" }))
+    .toBeInTheDocument();
+
+    expect(screen.getByRole('link', { name: "About Us" }))
+    .toBeInTheDocument();
+
+    expect(screen.getByRole('link', { name: "Farm Info" }))
+    .toBeInTheDocument();
+
+    expect(screen.getByRole('link', { name: "Contacts" }))
+    .toBeInTheDocument();
+
+    expect(screen.getByRole('link', { name: "Sign Up" }))
+    .toBeInTheDocument();
+  });
+
+  test("Sign Up link points to the signup page", () => {
+    render(
+      <MemoryRouter>
+        <MainNavBar />
+      </MemoryRouter>
+    );
+
+    const signUpLink = screen.getByRole('link', { name: "Sign Up" });
+
+    expect(signUpLink).toHaveAttribute('href', '/signup');
+  });
+
+  test("Menu button starts closed", () => {
+    render(
+      <MemoryRouter>
+        <MainNavBar />
+      </MemoryRouter>
+    );
+
+    const menuButton = screen.getByRole('button', { name: "Open menu" });
+
+    expect(menuButton).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test("Clicking the menu button opens the menu", () => {
+    render(
+      <MemoryRouter>
+        <MainNavBar />
+      </MemoryRouter>
+    );
+
+    const menuButton = screen.getByRole('button', { name: "Open menu" });
+
+    fireEvent.click(menuButton);
+
+    expect(screen.getByRole('button', { name: "Close menu" })).toBeInTheDocument();
+    
+    expect(menuButton).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  test("Clicking the menu button again closes the menu", () => {
+  render(
+    <MemoryRouter>
+      <MainNavBar />
+    </MemoryRouter>
+  );
+
+  const menuButton = screen.getByRole('button', { name: "Open menu" });
+
+    fireEvent.click(menuButton);
+
+    const closeButton = screen.getByRole('button', { name: "Close menu" });
+
+    fireEvent.click(closeButton);
+
+    expect(screen.getByRole('button', { name: "Open menu" })).toBeInTheDocument();
+
+    expect(screen.getByRole('button', { name: "Open menu" })).toHaveAttribute('aria-expanded', 'false');
+  });
+});
+
