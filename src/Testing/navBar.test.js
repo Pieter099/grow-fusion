@@ -1,5 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
+import MainNavBar from '../Components/NavBar';
 
 jest.mock(
   'react-router-dom',
@@ -12,8 +13,6 @@ jest.mock(
   }),
   { virtual: true }
 );
-
-import MainNavBar from '../Components/NavBar';
 
 describe('MainNavBar', () => {
   test('renders navigation links', () => {
