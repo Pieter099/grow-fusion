@@ -43,8 +43,9 @@ describe("getWeatherData", () => {
         expect(global.fetch).toHaveBeenCalledWith(
             expect.stringContaining("longitude=28.2293")
         );
+    });
 
-        test("returns weather data when the API request succeeds", async () => {
+     test("returns weather data when the API request succeeds", async () => {
             const mockWeatherData = {
                 current: {
                     temperature_2m: 24
@@ -62,9 +63,9 @@ describe("getWeatherData", () => {
             const result = await getWeatherData(-25.7479, 28.2293);
 
             expect(result).toEqual(mockWeatherData);
-        });
+    });
 
-        test("throws an error when the API request fails", async () => {
+    test("throws an error when the API request fails", async () => {
             global.fetch.mockResolvedValue({
                 ok: false,
                 status: 500,
@@ -72,9 +73,9 @@ describe("getWeatherData", () => {
             });
 
             await expect(getWeatherData(-25.7479, 28.2293)).rejects.toThrow("Server Error");
-        });
+    });
 
-        test("uses the HTTP status when the API returns an emty error response", async () => {
+    test("uses the HTTP status when the API returns an emty error response", async () => {
             global.fetch.mockResolvedValue({
                 ok: false,
                 status: 503,
@@ -82,6 +83,5 @@ describe("getWeatherData", () => {
             });
 
             await expect(getWeatherData(-25.7479, 28.2293)).rejects.toThrow("Weather API request failed with status 503");
-        });
     });
 });
