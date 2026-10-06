@@ -1,70 +1,313 @@
-# Getting Started with Create React App
+# GrowFusion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GrowFusion is a responsive agricultural information web application built with React and Redux. It brings together practical farming information, crop guidance, seasonal planning, soil preparation guidance, crop-care information, and real-time weather information in one accessible interface.
 
-## Available Scripts
+The project was created as a full front-end development project with a focus on responsive design, reusable React components, API integration, error handling, testing, accessibility, and performance.
 
-In the project directory, you can run:
+## Project Links
 
-### `yarn start`
+* **Live application:** *Add the deployed Netlify URL here*
+* **GitHub repository:** *Add the GitHub repository URL here*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project was planned using wireframes before development began.
 
-### `yarn test`
+> **Action required:** Add the final wireframe image(s) to the repository and link them in this section before submission.
+>
+> Suggested location: `docs/wireframes/`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Example:
 
-### `yarn build`
+```text
+GrowFusion/
+└── docs/
+    └── wireframes/
+        └── growfusion-wireframe.png
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After adding the image, it can be displayed here with:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```md
+![GrowFusion wireframe](./docs/wireframes/growfusion-wireframe.png)
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `yarn eject`
+### Front end
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* React
+* JavaScript
+* HTML5
+* CSS3
+* Redux Toolkit
+* React Redux
+* React Router
+* React Icons
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### APIs and external services
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Open-Meteo Weather API
+* Open-Meteo Geocoding API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Testing
 
-## Learn More
+* Jest through Create React App / `react-scripts`
+* React Testing Library
+* Playwright
+* Chromium for automated end-to-end testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Development tools
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Yarn
+* Git
+* GitHub
+* VS Code
 
-### Code Splitting
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Home
 
-### Analyzing the Bundle Size
+* Responsive hero section
+* GrowFusion branding and introductory message
+* Responsive image delivery for desktop and mobile screens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### About
 
-### Making a Progressive Web App
+* Overview of the GrowFusion platform
+* GrowFusion logo and project description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Farming Information
 
-### Advanced Configuration
+* Farm conditions section with weather information
+* Searchable weather information by city
+* Current weather conditions
+* Temperature and feels-like temperature
+* Humidity
+* Rain and precipitation
+* Wind speed
+* Atmospheric pressure
+* Seven-day weather forecast
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Crop Information
 
-### Deployment
+* Information about:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  * Barley
+  * Canola
+  * Corn
+  * Cotton
+  * Oats
+  * Wheat
+* Crop illustrations and factual agricultural information
 
-### `yarn build` fails to minify
+### Crop Calendar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Two-year crop planting and harvesting calendar
+* Planting and harvesting legend
+* Crop-specific seasonal information
+
+### Soil Preparation
+
+* Nine-step soil preparation guide
+* Supporting images for each step
+* External video resource
+* Additional agricultural resource link
+
+### Crop Care
+
+* Fertilizer information
+* Herbicide information
+* Seven fertilizer application steps
+* Seven herbicide application steps
+* Supporting images for each section
+
+### Contact
+
+* Contact email address
+* Social media section
+* Responsive footer layout
+
+### Sign Up
+
+* Username, email, and password fields
+* Native form validation for required fields
+* Responsive sign-up page
+
+## Error Handling
+
+GrowFusion includes user-facing recovery options for API-related failures.
+
+The weather feature provides an error message and a **Retry** button when weather data cannot be retrieved.
+
+City searches are validated before requests are made, and geocoding errors are handled without crashing the application.
+
+## Responsive Design
+
+GrowFusion was designed to work across desktop, tablet, and mobile screen sizes.
+
+Responsive improvements include:
+
+* Mobile navigation menu
+* Responsive layouts for farming-information sections
+* Responsive hero image delivery using `srcSet` and `sizes`
+* Responsive typography and spacing
+* Mobile-friendly weather and crop layouts
+* Optimised WebP and SVG assets
+
+## Testing
+
+### Unit Testing
+
+GrowFusion includes automated unit tests covering components, pages, API functions, Redux logic, and application routing.
+
+Current unit-test results:
+
+* **19 test suites passing**
+* **100 tests passing**
+* **0 failed tests**
+
+Coverage results from the final coverage run:
+
+| Metric     | Coverage |
+| ---------- | -------: |
+| Statements |   87.50% |
+| Branches   |   82.81% |
+| Functions  |   83.72% |
+| Lines      |   87.24% |
+
+Run the complete unit-test suite with:
+
+```bash
+yarn test --watchAll=false
+```
+
+Run the coverage report with:
+
+```bash
+yarn test --coverage --watchAll=false
+```
+
+### End-to-End Testing
+
+Playwright is used to test the application in a real Chromium browser.
+
+The current E2E tests cover:
+
+* Homepage loading
+* Main navigation
+* Sign-up navigation
+* Sign-up form interaction
+* Required-field validation
+* Returning from the sign-up page to the homepage
+* Weather section loading
+* Weather city searching
+
+Current E2E results:
+
+* **8 tests passing**
+* **0 failed tests**
+
+Run the E2E suite with:
+
+```bash
+yarn test:e2e
+```
+
+## Production Build
+
+Create a production build with:
+
+```bash
+yarn build
+```
+
+## Lighthouse and Performance
+
+The application was tested using Lighthouse in a production build and achieved scores above the required 90+ performance target.
+
+The final production results included:
+
+* **Mobile Performance: 98**
+* **Desktop Performance: 100**
+* **Accessibility: 98**
+* **Best Practices: 100**
+* **SEO: 100**
+
+Performance improvements included responsive image delivery, WebP image optimisation, lazy loading for below-the-fold images, SVG assets, and more focused icon imports.
+
+## Project Structure
+
+A simplified view of the main source structure is:
+
+```text
+src/
+├── API/
+├── Assets/
+├── Components/
+├── Features/
+├── Images/
+├── Pages/
+├── Redux/
+├── Subcomponents/
+├── Styles/
+├── Testing/
+└── setupTests.js
+```
+
+## Getting Started
+
+### Prerequisites
+
+* Node.js
+* Yarn
+* Git
+
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone <your-github-repository-url>
+cd grow-fusion
+yarn install
+```
+
+### Run locally
+
+Start the development server:
+
+```bash
+yarn start
+```
+
+The application will normally be available at:
+
+```text
+http://localhost:3000
+```
+
+## Future Work
+
+Potential future improvements include:
+
+* Deploy the application publicly and provide a live URL
+* Connect the sign-up form to a real backend/database
+* Add live crop market-price information
+* Add live soil information
+* Replace placeholder social-media destinations with the project's real social profiles
+* Expand browser compatibility testing
+* Consider a CI/CD workflow for automated deployment
+* Consider progressive web app support
+
+## Project Management
+
+The project was planned and tracked using a project-management board. The project task board reached **9/9 tasks completed** during development.
+
+## Version Control
+
+The project is version controlled with Git and maintained in a GitHub repository. Development was tracked through regular commits throughout the project.
+
+## License
+
+This project was created as a learning and portfolio project. Add a specific open-source license here if one is selected for the repository.
