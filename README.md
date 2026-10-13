@@ -11,26 +11,15 @@ The project was created as a full front-end development project with a focus on 
 
 ## Wireframes
 
-The project was planned using wireframes before development began.
+The following wireframes were created during the planning stage
+of GrowFusion. They illustrate the proposed structure and layout
+of the homepage, About section, Farming Information page, weather
+interface, crop guides, Contacts section, and Sign Up page.
 
-> **Action required:** Add the final wireframe image(s) to the repository and link them in this section before submission.
->
-> Suggested location: `docs/wireframes/`
+The wireframes helped guide the organization of the application's
+components and content before implementation.
 
-Example:
-
-```text
-GrowFusion/
-└── docs/
-    └── wireframes/
-        └── growfusion-wireframe.png
-```
-
-After adding the image, it can be displayed here with:
-
-```md
-![GrowFusion wireframe](./docs/wireframes/growfusion-wireframe.png)
-```
+[View the complete GrowFusion wireframes (PDF)](./ReadMeAssets/Grow-Fusion-wireframe.pdf)
 
 ## Technologies Used
 
